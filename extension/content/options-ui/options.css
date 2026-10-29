@@ -1,3 +1,6 @@
+/*!*******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./content/options-ui/sass/index.scss ***!
+  \*******************************************************************************************************************************/
 button {
   border: 1px solid #c8c8c8;
   background-image: linear-gradient(transparent 50%, rgba(43, 165, 183, 0.1) 50%);
@@ -9,22 +12,28 @@ button {
   font-family: inherit;
   padding: 3px 7px 5px;
   min-height: 22px;
-  transition: background 0.5s; }
-  button:hover {
-    background-image: linear-gradient(rgba(43, 165, 183, 0.1) 50%, transparent 50%);
-    color: #37414b; }
+  transition: background 0.5s;
+}
+button:hover {
+  background-image: linear-gradient(rgba(43, 165, 183, 0.1) 50%, transparent 50%);
+  color: #37414b;
+}
 
 @keyframes btn {
   from {
-    color: #2ba5b7; }
+    color: #2ba5b7;
+  }
   to {
-    color: #fbfbfb; } }
-
+    color: #fbfbfb;
+  }
+}
 button {
   width: 120px;
   font-size: inherit;
   margin-bottom: 12px;
-  background: #fff; }
-  button:hover {
-    background: #2ba5b7;
-    animation: 1s forwards btn; }
+  background: #fff;
+}
+button:hover {
+  background: #2ba5b7;
+  animation: 1s forwards btn;
+}

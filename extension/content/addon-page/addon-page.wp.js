@@ -1,145 +1,48 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./content/addon-page/index.js");
-/******/ })
-/************************************************************************/
-/******/ ({
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
 
 /***/ "./content/_shared/utils.js":
 /*!**********************************!*\
   !*** ./content/_shared/utils.js ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_COPY": () => (/* reexport safe */ _utils_copy__WEBPACK_IMPORTED_MODULE_0__._COPY),
+/* harmony export */   "_DOMMODULE": () => (/* reexport safe */ _utils_dommodule__WEBPACK_IMPORTED_MODULE_4__._DOMMODULE),
+/* harmony export */   "_ERRORTRACKER": () => (/* reexport safe */ _utils_error_tracker__WEBPACK_IMPORTED_MODULE_9__["default"]),
+/* harmony export */   "_EXTEND": () => (/* reexport safe */ _utils_extend__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   "_GET_ACTIVE_TAB": () => (/* reexport safe */ _utils_getActiveTab__WEBPACK_IMPORTED_MODULE_1__._GET_ACTIVE_TAB),
+/* harmony export */   "_HASHLESS": () => (/* reexport safe */ _utils_hashless__WEBPACK_IMPORTED_MODULE_7__._HASHLESS),
+/* harmony export */   "_L10N": () => (/* reexport safe */ _utils_l10n__WEBPACK_IMPORTED_MODULE_8__["default"]),
+/* harmony export */   "_MODULE": () => (/* reexport safe */ _utils_module__WEBPACK_IMPORTED_MODULE_3__._MODULE),
+/* harmony export */   "_PORT": () => (/* reexport safe */ _utils_port__WEBPACK_IMPORTED_MODULE_6__._PORT),
+/* harmony export */   "_PRIVPORT": () => (/* reexport safe */ _utils_port__WEBPACK_IMPORTED_MODULE_6__._PRIVPORT),
+/* harmony export */   "_STORE": () => (/* reexport safe */ _utils_store__WEBPACK_IMPORTED_MODULE_5__._STORE)
+/* harmony export */ });
+/* harmony import */ var _utils_copy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../utils/copy */ "./utils/copy.js");
+/* harmony import */ var _utils_getActiveTab__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../utils/getActiveTab */ "./utils/getActiveTab.js");
+/* harmony import */ var _utils_extend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../utils/extend */ "./utils/extend.js");
+/* harmony import */ var _utils_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../utils/module */ "./utils/module.js");
+/* harmony import */ var _utils_dommodule__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../utils/dommodule */ "./utils/dommodule.js");
+/* harmony import */ var _utils_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../utils/store */ "./utils/store.js");
+/* harmony import */ var _utils_port__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../utils/port */ "./utils/port.js");
+/* harmony import */ var _utils_hashless__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../utils/hashless */ "./utils/hashless.js");
+/* harmony import */ var _utils_l10n__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../../utils/l10n */ "./utils/l10n.js");
+/* harmony import */ var _utils_error_tracker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./../../utils/error-tracker */ "./utils/error-tracker.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports._HASHLESS = exports._ERRORTRACKER = exports._L10N = exports._PRIVPORT = exports._PORT = exports._STORE = exports._DOMMODULE = exports._MODULE = exports._EXTEND = exports._GET_ACTIVE_TAB = exports._COPY = undefined;
 
-var _copy = __webpack_require__(/*! ./../../utils/copy */ "./utils/copy.js");
 
-var _getActiveTab = __webpack_require__(/*! ./../../utils/getActiveTab */ "./utils/getActiveTab.js");
 
-var _extend = __webpack_require__(/*! ./../../utils/extend */ "./utils/extend.js");
 
-var _extend2 = _interopRequireDefault(_extend);
 
-var _module = __webpack_require__(/*! ./../../utils/module */ "./utils/module.js");
 
-var _dommodule = __webpack_require__(/*! ./../../utils/dommodule */ "./utils/dommodule.js");
 
-var _store = __webpack_require__(/*! ./../../utils/store */ "./utils/store.js");
 
-var _port = __webpack_require__(/*! ./../../utils/port */ "./utils/port.js");
 
-var _hashless = __webpack_require__(/*! ./../../utils/hashless */ "./utils/hashless.js");
-
-var _l10n = __webpack_require__(/*! ./../../utils/l10n */ "./utils/l10n.js");
-
-var _l10n2 = _interopRequireDefault(_l10n);
-
-var _errorTracker = __webpack_require__(/*! ./../../utils/error-tracker */ "./utils/error-tracker.js");
-
-var _errorTracker2 = _interopRequireDefault(_errorTracker);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-exports._COPY = _copy._COPY;
-exports._GET_ACTIVE_TAB = _getActiveTab._GET_ACTIVE_TAB;
-exports._EXTEND = _extend2["default"];
-exports._MODULE = _module._MODULE;
-exports._DOMMODULE = _dommodule._DOMMODULE;
-exports._STORE = _store._STORE;
-exports._PORT = _port._PORT;
-exports._PRIVPORT = _port._PRIVPORT;
-exports._L10N = _l10n2["default"];
-exports._ERRORTRACKER = _errorTracker2["default"];
-exports._HASHLESS = _hashless._HASHLESS;
 
 /***/ }),
 
@@ -147,19 +50,15 @@ exports._HASHLESS = _hashless._HASHLESS;
 /*!**************************************!*\
   !*** ./content/addon-page/_store.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _utils = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
-
-exports["default"] = new _utils._STORE({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._STORE({
   events: {
     ENV: {
       'toggled:sync': 'onToggledSync'
@@ -182,7 +81,7 @@ exports["default"] = new _utils._STORE({
       return storage.settings.shortcuts;
     });
   }
-});
+}));
 
 /***/ }),
 
@@ -190,61 +89,34 @@ exports["default"] = new _utils._STORE({
 /*!*****************************************!*\
   !*** ./content/addon-page/bootstrap.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_store */ "./content/addon-page/_store.js");
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _modules_history__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/history */ "./content/addon-page/modules/history.js");
+/* harmony import */ var _modules_settings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/settings */ "./content/addon-page/modules/settings.js");
+/* harmony import */ var _modules_logs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/logs */ "./content/addon-page/modules/logs.js");
+/* harmony import */ var _modules_syncing__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/syncing */ "./content/addon-page/modules/syncing.js");
+/* harmony import */ var _modules_import__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/import */ "./content/addon-page/modules/import.js");
+/* harmony import */ var _modules_contact__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/contact */ "./content/addon-page/modules/contact.js");
+/* harmony import */ var _modules_troubleshooting__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/troubleshooting */ "./content/addon-page/modules/troubleshooting.js");
+/* harmony import */ var _modules_history_pagination__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/history-pagination */ "./content/addon-page/modules/history-pagination.js");
+/* harmony import */ var _modules_permissions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/permissions */ "./content/addon-page/modules/permissions.js");
+/* harmony import */ var _modules_nav__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/nav */ "./content/addon-page/modules/nav.js");
 
 
-var _store = __webpack_require__(/*! ./_store */ "./content/addon-page/_store.js");
 
-var _store2 = _interopRequireDefault(_store);
 
-var _utils = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
 
-var _history = __webpack_require__(/*! ./modules/history */ "./content/addon-page/modules/history.js");
 
-var _history2 = _interopRequireDefault(_history);
 
-var _settings = __webpack_require__(/*! ./modules/settings */ "./content/addon-page/modules/settings.js");
 
-var _settings2 = _interopRequireDefault(_settings);
 
-var _logs = __webpack_require__(/*! ./modules/logs */ "./content/addon-page/modules/logs.js");
 
-var _logs2 = _interopRequireDefault(_logs);
 
-var _syncing = __webpack_require__(/*! ./modules/syncing */ "./content/addon-page/modules/syncing.js");
 
-var _syncing2 = _interopRequireDefault(_syncing);
-
-var _import = __webpack_require__(/*! ./modules/import */ "./content/addon-page/modules/import.js");
-
-var _import2 = _interopRequireDefault(_import);
-
-var _contact = __webpack_require__(/*! ./modules/contact */ "./content/addon-page/modules/contact.js");
-
-var _contact2 = _interopRequireDefault(_contact);
-
-var _troubleshooting = __webpack_require__(/*! ./modules/troubleshooting */ "./content/addon-page/modules/troubleshooting.js");
-
-var _troubleshooting2 = _interopRequireDefault(_troubleshooting);
-
-var _historyPagination = __webpack_require__(/*! ./modules/history-pagination */ "./content/addon-page/modules/history-pagination.js");
-
-var _historyPagination2 = _interopRequireDefault(_historyPagination);
-
-var _permissions = __webpack_require__(/*! ./modules/permissions */ "./content/addon-page/modules/permissions.js");
-
-var _permissions2 = _interopRequireDefault(_permissions);
-
-var _nav = __webpack_require__(/*! ./modules/nav */ "./content/addon-page/modules/nav.js");
-
-var _nav2 = _interopRequireDefault(_nav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-new _utils._MODULE({
+new _shared_utils__WEBPACK_IMPORTED_MODULE_1__._MODULE({
   events: {
     ENV: {
       'started:app': 'start',
@@ -252,103 +124,37 @@ new _utils._MODULE({
       'updated:history': 'start'
     }
   },
-  allowedHashes: [
-  /*'news', */
-  'manual', 'settings', 'history', 'contact', 'sync', 'export', 'troubleshooting', 'logs'],
+  allowedHashes: [/*'news', */'manual', 'settings', 'history', 'contact', 'sync', 'export', 'troubleshooting', 'logs'],
   bootstrapped: false,
   autoinit: function autoinit() {
     var _this = this;
-
-    _store2["default"].get().then(function (storage) {
+    _store__WEBPACK_IMPORTED_MODULE_0__["default"].get().then(function (storage) {
       if (storage.settings && storage.history) _this.start();
     });
   },
   start: function start() {
     if (!this.bootstrapped) {
       this.bootstrapped = true;
-      (0, _history2["default"])();
-      (0, _settings2["default"])();
-      (0, _logs2["default"])();
-      (0, _syncing2["default"])();
-      (0, _import2["default"])();
-      (0, _contact2["default"])();
-      (0, _troubleshooting2["default"])();
-      (0, _historyPagination2["default"])();
-      (0, _permissions2["default"])();
+      (0,_modules_history__WEBPACK_IMPORTED_MODULE_2__["default"])();
+      (0,_modules_settings__WEBPACK_IMPORTED_MODULE_3__["default"])();
+      (0,_modules_logs__WEBPACK_IMPORTED_MODULE_4__["default"])();
+      (0,_modules_syncing__WEBPACK_IMPORTED_MODULE_5__["default"])();
+      (0,_modules_import__WEBPACK_IMPORTED_MODULE_6__["default"])();
+      (0,_modules_contact__WEBPACK_IMPORTED_MODULE_7__["default"])();
+      (0,_modules_troubleshooting__WEBPACK_IMPORTED_MODULE_8__["default"])();
+      (0,_modules_history_pagination__WEBPACK_IMPORTED_MODULE_9__["default"])();
+      (0,_modules_permissions__WEBPACK_IMPORTED_MODULE_10__["default"])();
       this.initMainNav();
     }
   },
   initMainNav: function initMainNav() {
     var tab = window.location.hash.split('=')[1];
-
     if (this.allowedHashes.includes(tab)) {
       window.document.getElementById('mainnav-' + tab).classList.add('active');
     }
-
-    new _nav2["default"](window.document.getElementById('mainnav'));
+    new _modules_nav__WEBPACK_IMPORTED_MODULE_11__["default"](window.document.getElementById('mainnav'));
   }
 });
-
-/***/ }),
-
-/***/ "./content/addon-page/index.js":
-/*!*************************************!*\
-  !*** ./content/addon-page/index.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(/*! ./sass/index.scss */ "./content/addon-page/sass/index.scss");
-
-var _utils = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
-
-var _utils2 = _interopRequireDefault(_utils);
-
-var _nav = __webpack_require__(/*! ./modules/nav */ "./content/addon-page/modules/nav.js");
-
-var _nav2 = _interopRequireDefault(_nav);
-
-var _toggler = __webpack_require__(/*! ./modules/toggler */ "./content/addon-page/modules/toggler.js");
-
-var _toggler2 = _interopRequireDefault(_toggler);
-
-__webpack_require__(/*! ./port */ "./content/addon-page/port.js");
-
-__webpack_require__(/*! ./_store */ "./content/addon-page/_store.js");
-
-__webpack_require__(/*! ./bootstrap */ "./content/addon-page/bootstrap.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-(0, _utils._L10N)();
-/* auto-insert current version number */
-
-document.getElementById('version-number').innerText = browser.runtime.getManifest().version;
-/* end: auto-insert current version number */
-
-/* configure subnavs */
-
-var subnavs = document.getElementsByClassName('subnav');
-var n = subnavs.length;
-
-while (n--) {
-  new _nav2["default"](subnavs[n]);
-}
-/* end: configure navs */
-
-/* configure toggle elements */
-
-
-var toggleButtons = document.getElementsByClassName('toggle-button'),
-    t = toggleButtons.length;
-
-while (t--) {
-  new _toggler2["default"](toggleButtons[t]);
-}
-/* end: configure toggle elements */
 
 /***/ }),
 
@@ -356,18 +162,18 @@ while (t--) {
 /*!***********************************************!*\
   !*** ./content/addon-page/modules/contact.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function () {
-  return new _utils._MODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._MODULE({
     events: {
       ENV: {
         'updated:logs': 'setLogLink'
@@ -378,30 +184,19 @@ exports["default"] = function () {
     },
     setLogLink: function setLogLink() {
       var logLink = document.getElementById('log-mail');
-
-      _store2["default"].get('logs').then(function (logs) {
+      _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('logs').then(function (logs) {
         var l = logs ? logs.length : 0,
-            href = 'mailto:undflybir@gmx.de?subject=Textmarker' + encodeURIComponent(' : Error Logs') + '&body=' + encodeURIComponent('- ' + browser.i18n.getMessage('your_msg') + ' -\n\n\nLOGS:\n\n'),
-            log;
-
+          href = 'mailto:undflybir@gmx.de?subject=Textmarker' + encodeURIComponent(' : Error Logs') + '&body=' + encodeURIComponent('- ' + browser.i18n.getMessage('your_msg') + ' -\n\n\nLOGS:\n\n'),
+          log;
         while (l--) {
           log = logs[l];
           href += log[1] + (log[2] ? ' (' + log[2] + ')' : '') + ' - ' + encodeURIComponent(new Date(log[0]).toUTCString() + '\n');
         }
-
         logLink.href = href;
       });
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+}
 
 /***/ }),
 
@@ -409,18 +204,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!**********************************************************!*\
   !*** ./content/addon-page/modules/history-pagination.js ***!
   \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
+/* harmony import */ var _toggler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toggler */ "./content/addon-page/modules/toggler.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 
-exports["default"] = function () {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: document.getElementById('paginator'),
     events: {
       ENV: {
@@ -447,7 +244,6 @@ exports["default"] = function () {
     },
     "goto": function goto(e, el) {
       var newPage = el.getAttribute('data-page') * 1;
-
       if (this.currentPage !== newPage) {
         this.emit('paginate:history', newPage);
         this.currentPage = newPage;
@@ -472,11 +268,10 @@ exports["default"] = function () {
     },
     updateFromStorage: function updateFromStorage() {
       var _this = this;
-
-      _store2["default"].get('settings').then(function (settings) {
+      _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('settings').then(function (settings) {
         return _this.perPage = settings.history.pp || 10;
       }).then(function () {
-        return _store2["default"].get('history').then(function (history) {
+        return _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('history').then(function (history) {
           return _this.update(Object.keys(history.entries).length);
         });
       });
@@ -484,12 +279,10 @@ exports["default"] = function () {
     update: function update(l, silent) {
       this.numberEntries = l;
       this.numberPages = l ? Math.ceil(l / this.perPage) : 1;
-
       if (this.currentPage > this.numberPages) {
         this.currentPage = this.numberPages;
         if (!silent) this.emit('paginate:history', this.currentPage);
       }
-
       this.render();
     },
     reset: function reset(l) {
@@ -502,14 +295,12 @@ exports["default"] = function () {
       Array.from(ul.getElementsByClassName('page')).forEach(function (li) {
         return li.remove();
       });
-
       if (l < this.perPage + 1) {
         this.el.classList.add('u-display--none');
         return;
       } else {
         this.el.classList.remove('u-display--none');
       }
-
       var p = this.currentPage;
       var pages = this.numberPages;
       var r = 7 - (pages - 1 - p);
@@ -519,11 +310,9 @@ exports["default"] = function () {
       if (r > 0) i = Math.max(2, Math.min(i, i - r));
       var j = Math.min(pages, i + 14) + 1;
       this.appendButton(frag, 1);
-
       for (; i < j; i++) {
         this.appendButton(frag, i);
       }
-
       if (pages > j - 1) this.appendButton(frag, pages);
       ul.insertBefore(frag, next);
     },
@@ -540,19 +329,7 @@ exports["default"] = function () {
       this.update(this.numberEntries, true);
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-var _toggler = __webpack_require__(/*! ./toggler */ "./content/addon-page/modules/toggler.js");
-
-var _toggler2 = _interopRequireDefault(_toggler);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+}
 
 /***/ }),
 
@@ -560,16 +337,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!****************************************************!*\
   !*** ./content/addon-page/modules/history-sort.js ***!
   \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   by: {
     date: {
       created: function created(object) {
@@ -598,7 +372,7 @@ exports["default"] = {
       }
     }
   }
-};
+});
 
 /***/ }),
 
@@ -606,20 +380,27 @@ exports["default"] = {
 /*!***********************************************!*\
   !*** ./content/addon-page/modules/history.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
+/* harmony import */ var _toggler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toggler */ "./content/addon-page/modules/toggler.js");
+/* harmony import */ var _history_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./history-sort */ "./content/addon-page/modules/history-sort.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 
-exports["default"] = function () {
+
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
   var _DOMMODULE2;
-
-  return new _utils._DOMMODULE((_DOMMODULE2 = {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE((_DOMMODULE2 = {
     el: document.getElementById('history'),
     events: {
       ENV: {
@@ -678,33 +459,29 @@ exports["default"] = function () {
   }, _defineProperty(_DOMMODULE2, 'delete', function _delete(names) {
     var msg = 'del_confirm';
     var l = names.length;
-
     while (l--) {
       if (this.entries[names[l]].locked) {
         msg += '_locked';
         break;
       }
     }
-
     var confirmed = window.confirm(browser.i18n.getMessage(msg));
     if (confirmed) this.emit('delete:entries', names);
   }), _defineProperty(_DOMMODULE2, "clean", function clean(names) {
     this.emit('clean:entries', names);
   }), _defineProperty(_DOMMODULE2, "download", function download(names, type, spec) {
     var _this = this;
-
     if (typeof type !== 'string') {
-      return _store2["default"].get('download_option').then(function (settings) {
+      return _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('download_option').then(function (settings) {
         settings = settings.split(' ');
         type = settings[0];
         spec = settings.length === 2 ? settings[1] : undefined;
         if (type === 'json') _this["export"](names);else _this.download(names, type, spec);
       });
     }
-
     this.getData(names, type, spec).then(function (data) {
       var text = encodeURIComponent(data),
-          link = document.createElement('a');
+        link = document.createElement('a');
       link.setAttribute('download', 'Textmarker (' + names.join('_') + ').txt');
       link.href = 'data:text/plain;charset=utf-8,' + text;
       document.body.appendChild(link);
@@ -713,21 +490,18 @@ exports["default"] = function () {
     });
   }), _defineProperty(_DOMMODULE2, "export", function _export(names) {
     var backup = {
-      history: {
-        entries: {}
-      }
-    },
-        entries = backup.history.entries,
-        link = document.createElement('a');
-
-    _store2["default"].get('history').then(function (history) {
+        history: {
+          entries: {}
+        }
+      },
+      entries = backup.history.entries,
+      link = document.createElement('a');
+    _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('history').then(function (history) {
       var name;
-
       while (names.length) {
         name = names.pop();
         entries[name] = history.entries[name];
       }
-
       backup = encodeURIComponent(JSON.stringify(backup));
       link.setAttribute('download', 'Textmarker-backup-' + new Date().toLocaleString().replace(/\D/g, '_') + '.json');
       link.href = 'data:text/json;charset=utf-8,' + backup;
@@ -739,7 +513,6 @@ exports["default"] = function () {
     this.emit('sync:entry', name[0], el.classList.contains('active'));
   }), _defineProperty(_DOMMODULE2, "visit", function visit(names) {
     var _this2 = this;
-
     this.getURLs(names).then(function (urls) {
       return _this2.emit('open:entries', urls, names);
     });
@@ -747,7 +520,6 @@ exports["default"] = function () {
     this.emit('open:entries', el.getAttribute('data-url'), el.getAttribute('data-name'));
   }), _defineProperty(_DOMMODULE2, "edit", function edit(e, el) {
     var newName = window.prompt(browser.i18n.getMessage('nm_message_edit'));
-
     if (newName) {
       var oldName = el.getAttribute('data-name');
       var area = el.parentNode.getElementsByClassName('switch--sync')[0].classList.contains('active') ? 'sync' : 'local';
@@ -757,7 +529,6 @@ exports["default"] = function () {
     this.emit('view:entry', el.getAttribute('data-name'));
   }), _defineProperty(_DOMMODULE2, "tag", function tag(names, _tag, force) {
     var _this3 = this;
-
     if (!_tag && !force) return;
     var o = {
       sync: [],
@@ -771,82 +542,73 @@ exports["default"] = function () {
     this.tag(names, '', true);
   }), _defineProperty(_DOMMODULE2, "processSelection", function processSelection() {
     var checked = document.querySelectorAll('.entry-cb:checked'),
-        i = checked.length;
+      i = checked.length;
     if (!i) return false;
     var action = document.getElementById('action').value,
-        names = [];
-
+      names = [];
     while (i--) {
       names.push(checked[i].getAttribute('data-name'));
     }
-
     if (action === 'tag') {
       var val = document.getElementById('tag').value;
       this.tag(names, val);
     } else {
       var split = document.getElementById('specification').value.split(' '),
-          type = split[0],
-          spec = split[1];
+        type = split[0],
+        spec = split[1];
       !this[action] || this[action](names, type, spec);
     }
   }), _defineProperty(_DOMMODULE2, "renderEntries", function renderEntries() {
     var _this4 = this;
-
     var template = this.entryTmpl,
-        container = this.entriesContainer,
-        entries = this.entries,
-        searchTerm = this.searchTerm,
-        searchTermLength = searchTerm ? searchTerm.length : 0,
-        searched = !!searchTerm,
-        searchedFullText = this.searchedFullText,
-        names = searched ? this.searched : this.names,
-        l = searched ? names.length : this.page * this.perPage,
-        i = searched ? 0 : l - this.perPage,
-        clone,
-        entry,
-        name,
-        nameField,
-        input,
-        label,
-        infoButton,
-        details,
-        searchResults,
-        buttons,
-        edit,
-        view,
-        tags,
-        immut,
-        immutEl,
-        locked,
-        lockedEl,
-        tagEl,
-        b,
-        j;
-
+      container = this.entriesContainer,
+      entries = this.entries,
+      searchTerm = this.searchTerm,
+      searchTermLength = searchTerm ? searchTerm.length : 0,
+      searched = !!searchTerm,
+      searchedFullText = this.searchedFullText,
+      names = searched ? this.searched : this.names,
+      l = searched ? names.length : this.page * this.perPage,
+      i = searched ? 0 : l - this.perPage,
+      clone,
+      entry,
+      name,
+      nameField,
+      input,
+      label,
+      infoButton,
+      details,
+      searchResults,
+      buttons,
+      edit,
+      view,
+      tags,
+      immut,
+      immutEl,
+      locked,
+      lockedEl,
+      tagEl,
+      b,
+      j;
     if (this.filtered) {
       names = names.filter(function (n) {
         return !!entries[n];
       });
     }
-
     l = Math.min(l, names.length);
     container.innerText = '';
     document.getElementById('checkmark-all').checked = false;
     if (!l) return this;
-
     for (; i < l; i++) {
       (function (i, j) {
         name = names ? names[i] : null;
         entry = entries ? entries[name] : null;
-
         if (entry) {
           try {
             if (entry.name !== name) {
               entry.name = name;
-
               _this4.emit('correct-name:entry', name, entry.synced ? 'sync' : 'local');
             }
-
             tags = entry.tag ? entry.tag.split(' ') : null;
             locked = entry.locked;
             immut = entry.immut;
@@ -867,11 +629,9 @@ exports["default"] = function () {
             lockedEl = clone.getElementsByClassName('locked')[0];
             immutEl = clone.getElementsByClassName('immut')[0];
             b = buttons.length;
-
             while (b--) {
               buttons[b].setAttribute('data-name', name);
             }
-
             nameField.appendChild(document.createTextNode(name));
             nameField.setAttribute('data-url', entry.url);
             nameField.setAttribute('data-name', name);
@@ -880,16 +640,13 @@ exports["default"] = function () {
             input.setAttribute('data-name', name);
             view.setAttribute('data-name', name);
             label.setAttribute('for', 'entry-cb-' + j);
-
             if (locked) {
               lockedEl.classList.remove('u-display--none');
             } else {
               edit.classList.remove('u-display--none');
               edit.setAttribute('data-name', name);
             }
-
             if (immut) immutEl.classList.remove('u-display--none');
-
             if (tags) {
               tags.forEach(function (tag) {
                 var el = document.createElement('span');
@@ -901,30 +658,27 @@ exports["default"] = function () {
             } else {
               tagEl.innerText = browser.i18n.getMessage('detail_notag');
             }
-
             clone.getElementsByClassName('created')[0].innerText = _this4.optimizeDateString(new Date(entry.first).toLocaleString());
             clone.getElementsByClassName('last')[0].innerText = _this4.optimizeDateString(new Date(entry.last).toLocaleString());
-            clone.getElementsByClassName('count')[0].innerText = entry.marks.length; //clone.getElementsByClassName('lost')[0].innerText = entry.lost ? entry.lost.length : 0;
+            clone.getElementsByClassName('count')[0].innerText = entry.marks.length;
+            //clone.getElementsByClassName('lost')[0].innerText = entry.lost ? entry.lost.length : 0;
 
             if (entry.synced) {
               clone.getElementsByClassName('switch--sync')[0].classList.add('active');
             }
-
             if (searchedFullText) {
               var fullTextSearchResults = _this4.fullTextSearchResults[name];
-
               if (fullTextSearchResults) {
                 var r = 0,
-                    res,
-                    mark,
-                    pos,
-                    markText,
-                    markTextEl,
-                    highlight,
-                    t1,
-                    t2,
-                    t3;
-
+                  res,
+                  mark,
+                  pos,
+                  markText,
+                  markTextEl,
+                  highlight,
+                  t1,
+                  t2,
+                  t3;
                 for (; r < fullTextSearchResults.length; r++) {
                   res = fullTextSearchResults[r];
                   mark = entry.marks[res.mark];
@@ -946,18 +700,15 @@ exports["default"] = function () {
                 }
               }
             }
-
             if (!entry.url) {
               throw 'Entry is missing URL field!';
             }
           } catch (e) {
             var brokenEl = document.getElementById('entry-' + j);
-
             if (brokenEl) {
               brokenEl.classList.add('entry--broken');
               brokenEl.title = e.toString();
               var brokenNameEl = brokenEl.getElementsByClassName('name')[0];
-
               if (brokenNameEl) {
                 brokenNameEl.classList.remove('name');
                 brokenNameEl.classList.add('name--disabled');
@@ -972,11 +723,9 @@ exports["default"] = function () {
         }
       })(i, l - i - 1);
     }
-
     return this;
   }), _defineProperty(_DOMMODULE2, "toggleHeaderFields", function toggleHeaderFields(l) {
     var _this5 = this;
-
     var noEntriesHint = document.getElementById('no-entries');
     var search = document.getElementById('search');
     var actions = document.getElementById('history-actions');
@@ -999,13 +748,12 @@ exports["default"] = function () {
     view.classList[meth_1]('u-display--none');
     checkall.classList[meth_2]('u-display--none');
     document.getElementById('entries-count').innerText = l;
-    return _store2["default"].get('settings').then(function (settings) {
+    return _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('settings').then(function (settings) {
       var pp = _this5.perPage = settings.history.pp || 10;
       ppSelect.value = pp;
     });
   }), _defineProperty(_DOMMODULE2, "setFilterOptions", function setFilterOptions() {
     var _this6 = this;
-
     if (this.filterOptionsSet) return this;
     var select = document.getElementById('filter-entries');
     var placeholderOption = document.createElement('option');
@@ -1017,7 +765,6 @@ exports["default"] = function () {
     placeholderOption.setAttribute('selected', '');
     placeholderOption.setAttribute('hidden', '');
     placeholderOption.innerText = browser.i18n.getMessage('t5124');
-
     for (var name in entries) {
       tags = entries[name].tag;
       tags = tags ? tags.split(' ') : [];
@@ -1025,7 +772,6 @@ exports["default"] = function () {
         if (!allTags.includes(tag)) allTags.push(tag);
       });
     }
-
     if (!allTags.length && !document.getElementById('filter-opt-notag')) {
       this.addFilterOpt('', browser.i18n.getMessage('detail_notag'), {
         disabled: true,
@@ -1035,14 +781,12 @@ exports["default"] = function () {
       allTags.forEach(function (tag) {
         return _this6.addFilterOpt(tag, tag);
       });
-
       if (!document.getElementById('filter-opt-tagless')) {
         this.addFilterOpt('', browser.i18n.getMessage('t5125'), {
           id: 'filter-opt-tagless'
         });
       }
     }
-
     this.filterOptionsSet = true;
   }), _defineProperty(_DOMMODULE2, "addFilterOpt", function addFilterOpt(tag, text, attrs) {
     if (this.tags.includes(tag)) return this;
@@ -1051,56 +795,50 @@ exports["default"] = function () {
     select.appendChild(opt);
     opt.value = tag;
     opt.innerText = text;
-
     if (attrs) {
       for (var a in attrs) {
         opt.setAttribute(a, attrs[a]);
       }
     }
-
     if (!this.tags.length && tag) {
       var notagFilterOpt = document.getElementById('filter-opt-notag');
       if (notagFilterOpt) select.removeChild(notagFilterOpt);
-
       if (!document.getElementById('filter-opt-tagless')) {
         this.addFilterOpt('', browser.i18n.getMessage('t5125'), {
           id: 'filter-opt-tagless'
         });
       }
     }
-
     if (tag) this.tags.push(tag);
   }), _defineProperty(_DOMMODULE2, "getText", function getText(names, spec) {
     var _this7 = this;
-
     var all_marks_plus_meta = spec === '+meta',
-        all_marks_plus_lost = spec === '+lost',
-        all_marks_plus_meta_and_notes = spec === '+notes',
-        all_marks_lost = spec === 'lost',
-        defaultMarkers = ['m', '2', '3', 2, 3],
-        reject = defaultMarkers.includes(spec) ? function (key) {
-      return key != spec;
-    } : spec === 'c' ? function (key) {
-      return defaultMarkers.includes(key);
-    } : null,
-        newLine = '\r\n',
-        newLines = '\r\n\r\n',
-        note = browser.i18n.getMessage('note'),
-        text = '',
-        l = names.length,
-        i = 0,
-        noteText,
-        entry,
-        marks,
-        mark,
-        lost,
-        name,
-        m,
-        n,
-        j;
-    return _store2["default"].get('history').then(function (history) {
+      all_marks_plus_lost = spec === '+lost',
+      all_marks_plus_meta_and_notes = spec === '+notes',
+      all_marks_lost = spec === 'lost',
+      defaultMarkers = ['m', '2', '3', 2, 3],
+      reject = defaultMarkers.includes(spec) ? function (key) {
+        return key != spec;
+      } : spec === 'c' ? function (key) {
+        return defaultMarkers.includes(key);
+      } : null,
+      newLine = '\r\n',
+      newLines = '\r\n\r\n',
+      note = browser.i18n.getMessage('note'),
+      text = '',
+      l = names.length,
+      i = 0,
+      noteText,
+      entry,
+      marks,
+      mark,
+      lost,
+      name,
+      m,
+      n,
+      j;
+    return _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('history').then(function (history) {
       var entries = history.entries;
-
       for (; i < l; i++) {
         name = names[i];
         entry = entries[name];
@@ -1108,71 +846,57 @@ exports["default"] = function () {
         lost = entry.lost;
         m = marks.length;
         n = lost.length;
-
         if (!all_marks_lost) {
           if (all_marks_plus_meta || all_marks_plus_meta_and_notes) {
             text += name + newLine + 'URL: ' + entry.url + newLine + browser.i18n.getMessage('page_title') + ': ' + entry.title + newLine + browser.i18n.getMessage('created') + ': ' + _this7.optimizeDateString(new Date(entry.first).toLocaleString()) + newLine + browser.i18n.getMessage('last_modified') + ': ' + _this7.optimizeDateString(new Date(entry.last).toLocaleString()) + newLine + newLines;
           }
-
           for (j = 0; j < m; j++) {
             mark = marks[j];
             if (reject && reject(mark.key)) continue;
-
             if (all_marks_plus_meta_and_notes) {
               text += '---' + newLine;
             }
-
             text += mark.text.replace(/\n/g, '\r\n') + newLines;
-
             if (all_marks_plus_meta_and_notes && mark.note) {
               noteText = mark.note.text || mark.note;
               text += '  ' + note + ':' + newLine + '  ' + noteText.replace(/\n/g, '\r\n  ') + newLines;
             }
           }
         }
-
         if (all_marks_lost || all_marks_plus_lost) {
           text += newLines + browser.i18n.getMessage('lost_marks') + ':' + newLines + newLines;
-
           for (j = 0; j < n; j++) {
             mark = lost[j];
             text += mark.text.replace(/\n/g, '\r\n') + newLines;
           }
         }
-
         text += newLines + newLines + newLines;
       }
-
       return text.trim();
     });
   }), _defineProperty(_DOMMODULE2, "getData", function getData(names, type, spec) {
     var _this8 = this;
-
     if (type === 'text') return this.getText(names, spec);
-    return _store2["default"].get('history').then(function (history) {
+    return _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('history').then(function (history) {
       var entries = _this8.origEntries = history.entries,
-          l = names.length,
-          data = '',
-          newLines = '\r\n\r\n',
-          i = 0;
-
+        l = names.length,
+        data = '',
+        newLines = '\r\n\r\n',
+        i = 0;
       for (; i < l; i++) {
         data += entries[names[i]][type] + newLines;
       }
-
       return data;
     });
   }), _defineProperty(_DOMMODULE2, "getURLs", function getURLs(names) {
-    return _store2["default"].get('history').then(function (history) {
+    return _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('history').then(function (history) {
       var entries = history.entries,
-          urls = [],
-          l = names.length,
-          i = 0;
-
+        urls = [],
+        l = names.length,
+        i = 0;
       for (; i < l; i++) {
         urls.push(entries[names[i]].url);
       }
-
       return urls;
     });
   }), _defineProperty(_DOMMODULE2, "optimizeDateString", function optimizeDateString(date) {
@@ -1196,7 +920,6 @@ exports["default"] = function () {
     var searchCount = document.getElementById('search-count');
     this.searched = [];
     this.searchTerm = term;
-
     if (!term) {
       history.classList.remove('searched');
       history.classList.remove('searched--full-text');
@@ -1205,7 +928,6 @@ exports["default"] = function () {
       return this;
     } else {
       history.classList.add('searched');
-
       if (searchType === 'full-text') {
         history.classList.add('searched--full-text');
         this.searchFullText(term);
@@ -1215,20 +937,16 @@ exports["default"] = function () {
         this.searchByName(term);
         this.searchedFullText = false;
       }
-
       searchCount.innerText = this.searched.length || '';
     }
-
     return this;
   }), _defineProperty(_DOMMODULE2, "searchByName", function searchByName(term) {
     var names = this.names;
     var l = names.length,
-        i = 0,
-        name;
-
+      i = 0,
+      name;
     for (; i < l; i++) {
       name = names[i];
-
       if (name.toLowerCase().search(term) !== -1) {
         this.searched.push(name);
       }
@@ -1237,15 +955,12 @@ exports["default"] = function () {
     var entries = this.origEntries;
     var name, marks, i, markText, pos, found;
     var results = this.fullTextSearchResults = {};
-
     for (name in entries) {
       marks = entries[name].marks;
       found = false;
-
       for (i = 0; i < marks.length; i++) {
         markText = marks[i].text;
         pos = markText.toLowerCase().search(text);
-
         if (pos !== -1) {
           found = true;
           results[name] = results[name] || [];
@@ -1255,7 +970,6 @@ exports["default"] = function () {
           });
         }
       }
-
       if (found) {
         this.searched.push(name);
       }
@@ -1293,7 +1007,7 @@ exports["default"] = function () {
     this.setupSort(sorted).renderEntries();
   }), _defineProperty(_DOMMODULE2, "setupSort", function setupSort(sorted) {
     sorted = sorted.split('-');
-    this.names = _historySort2["default"].by[sorted[0]][sorted[1]](this.origEntries);
+    this.names = _history_sort__WEBPACK_IMPORTED_MODULE_3__["default"].by[sorted[0]][sorted[1]](this.origEntries);
     this.sortSearchResults();
     return this;
   }), _defineProperty(_DOMMODULE2, "filter", function filter(e, el) {
@@ -1301,20 +1015,17 @@ exports["default"] = function () {
     var entries = this.origEntries;
     var filteredEntries = {};
     var entry,
-        rx,
-        c = 0;
+      rx,
+      c = 0;
     document.getElementById('filter').classList.add('active');
-
     for (var name in entries) {
       entry = entries[name];
       rx = new RegExp('^' + filter + '$|^' + filter + '\\s|\\s' + filter + '\\s|\\s' + filter + '$', 'g');
-
       if (filter && entry.tag && entry.tag.search(rx) !== -1 || !entry.tag && filter == '') {
         filteredEntries[name] = entry;
         c++;
       }
     }
-
     this.entries = filteredEntries;
     this.filtered = true;
     this.page = 1;
@@ -1339,18 +1050,16 @@ exports["default"] = function () {
     });
   }), _defineProperty(_DOMMODULE2, "checkmarkAll", function checkmarkAll(e, el) {
     var directly = typeof el === 'boolean',
-        checked = directly ? el : el.checked,
-        inputs = document.getElementById('entries').getElementsByTagName('input'),
-        i = inputs.length;
-
+      checked = directly ? el : el.checked,
+      inputs = document.getElementById('entries').getElementsByTagName('input'),
+      i = inputs.length;
     while (i--) {
       inputs[i].checked = checked;
     }
-
     return false;
   }), _defineProperty(_DOMMODULE2, "delegateButtonAction", function delegateButtonAction(e, el) {
     var action = el.getAttribute('data-action'),
-        name = el.getAttribute('data-name');
+      name = el.getAttribute('data-name');
     name = name ? [name] : undefined;
     !this[action] || this[action](name, el);
   }), _defineProperty(_DOMMODULE2, "toggleSwitch", function toggleSwitch(e, el) {
@@ -1361,22 +1070,16 @@ exports["default"] = function () {
     document.querySelector('.switch--sync[data-name="' + name + '"]').classList.toggle('active');
   }), _defineProperty(_DOMMODULE2, "render", function render() {
     var _this9 = this;
-
     this.resume();
-
-    _store2["default"].get().then(function (storage) {
+    _store__WEBPACK_IMPORTED_MODULE_1__["default"].get().then(function (storage) {
       var entries = _this9.entries = _this9.origEntries = storage.history.entries,
-          sorted = storage.settings.history.sorted || _this9.sorted,
-          view = storage.settings.history.view || _this9.viewMode,
-          l;
+        sorted = storage.settings.history.sorted || _this9.sorted,
+        view = storage.settings.history.view || _this9.viewMode,
+        l;
       _this9.sorted = sorted;
-
       _this9.setupSort(sorted);
-
       _this9.setupView(view);
-
       l = _this9.names.length;
-
       _this9.setupSearch().toggleHeaderFields(l).then(function () {
         return _this9.renderEntries().setFilterOptions();
       });
@@ -1388,27 +1091,10 @@ exports["default"] = function () {
     var el = document.querySelector('.entry[data-name="' + entry.name + '"]');
     el.getElementsByClassName('created')[0].innerText = entry.first;
     el.getElementsByClassName('last')[0].innerText = entry.last;
-    el.getElementsByClassName('count')[0].innerText = entry.marks.length; //el.getElementsByClassName('lost')[0].innerText = entry.lost.length;
+    el.getElementsByClassName('count')[0].innerText = entry.marks.length;
+    //el.getElementsByClassName('lost')[0].innerText = entry.lost.length;
   }), _DOMMODULE2));
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-var _toggler = __webpack_require__(/*! ./toggler */ "./content/addon-page/modules/toggler.js");
-
-var _toggler2 = _interopRequireDefault(_toggler);
-
-var _historySort = __webpack_require__(/*! ./history-sort */ "./content/addon-page/modules/history-sort.js");
-
-var _historySort2 = _interopRequireDefault(_historySort);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+}
 
 /***/ }),
 
@@ -1416,18 +1102,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 /*!**********************************************!*\
   !*** ./content/addon-page/modules/import.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function () {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: document.getElementById('export'),
     events: {
       ENV: {
@@ -1453,13 +1139,11 @@ exports["default"] = function () {
     },
     "import": function _import(storeString, type) {
       var parsedString;
-
       try {
         parsedString = JSON.parse(storeString);
       } catch (e) {
         return this.displayFailure(browser.i18n.getMessage('error_file_parse'));
       }
-
       if (parsedString) {
         this.emit('import:storage', parsedString, type);
         this.displayFailure('');
@@ -1470,20 +1154,18 @@ exports["default"] = function () {
     },
     handleFile: function handleFile(e, el) {
       var reader = new FileReader(),
-          file = el.files[0],
-          size = file.size / 1000000,
-          type = el.getAttribute('data-type'),
-          mod = this;
+        file = el.files[0],
+        size = file.size / 1000000,
+        type = el.getAttribute('data-type'),
+        mod = this;
       if (size > 50) return this.displayFailure(browser.i18n.getMessage('error_file_size'));
       if (type === 'sync' && size > 0.099) return this.displayFailure(browser.i18n.getMessage('error_file_size_sync'));
       if (file.name.split('.').pop() !== 'json') return this.displayFailure(browser.i18n.getMessage('error_file_format'));
-
       reader.onload = function (file) {
         return function (e) {
           mod["import"](e.target.result, type);
         };
       }(file);
-
       reader.readAsText(file);
     },
     displayFailure: function displayFailure(reason) {
@@ -1492,11 +1174,10 @@ exports["default"] = function () {
     updateExportLinks: function updateExportLinks() {
       var localDataLink = document.getElementById('export-local');
       var syncedDataLink = document.getElementById('export-synced');
-
-      _store2["default"].get('local_storage').then(function (storage) {
+      _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('local_storage').then(function (storage) {
         localDataLink.href = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(storage));
       }).then(function () {
-        return _store2["default"].get('synced_storage').then(function (storage) {
+        return _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('synced_storage').then(function (storage) {
           syncedDataLink.href = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(storage));
         });
       });
@@ -1505,15 +1186,7 @@ exports["default"] = function () {
       el.parentNode.setAttribute('download', 'Textmarker-data-' + el.getAttribute('data-type') + '-' + new Date().toLocaleString().replace(/\D/g, '_') + '.json');
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+}
 
 /***/ }),
 
@@ -1521,18 +1194,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!********************************************!*\
   !*** ./content/addon-page/modules/logs.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
+/* harmony import */ var _data_log_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../data/log-keys */ "./data/log-keys.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 
-exports["default"] = function () {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: document.getElementById('logs'),
     events: {
       ENV: {
@@ -1547,7 +1222,6 @@ exports["default"] = function () {
     },
     autoinit: function autoinit() {
       var _this = this;
-
       this.logMissingPermissions().then(function () {
         return _this.log();
       });
@@ -1563,33 +1237,29 @@ exports["default"] = function () {
     },
     log: function log() {
       var _this2 = this;
-
-      _store2["default"].get('logs').then(function (logs) {
+      _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('logs').then(function (logs) {
         logs = logs || [];
-
         var tableBody = _this2.el.getElementsByTagName('tbody')[0],
-            l = logs.length,
-            frag = document.createDocumentFragment(),
-            tr,
-            td_date,
-            td_msg,
-            node_date,
-            node_msg,
-            node_attempt,
-            url,
-            log,
-            time,
-            msg,
-            reason;
-
+          l = logs.length,
+          frag = document.createDocumentFragment(),
+          tr,
+          td_date,
+          td_msg,
+          node_date,
+          node_msg,
+          node_attempt,
+          url,
+          log,
+          time,
+          msg,
+          reason;
         if (l) {
           _this2.el.classList.remove('nologs');
-
           while (l--) {
             log = logs[l];
             msg = log[1];
-            if (typeof msg === 'number') msg = browser.i18n.getMessage(_logKeys2["default"].getKeyByValue(log[1])); //'nu',{year:'numeric',month:'2-digit',day:'2-digit',hour:'numeric',second:'numeric',minute:'numeric'}
-
+            if (typeof msg === 'number') msg = browser.i18n.getMessage(_data_log_keys__WEBPACK_IMPORTED_MODULE_2__["default"].getKeyByValue(log[1]));
+            //'nu',{year:'numeric',month:'2-digit',day:'2-digit',hour:'numeric',second:'numeric',minute:'numeric'}
             time = _this2.optimizeDateString(new Date(log[0]).toLocaleString());
             tr = document.createElement('tr');
             td_date = document.createElement('td');
@@ -1598,31 +1268,26 @@ exports["default"] = function () {
             node_msg = document.createTextNode(msg);
             td_date.appendChild(node_date);
             td_msg.appendChild(node_msg);
-
             if (log[2]) {
-              reason = document.createElement('div'); //reason.appendChild(document.createTextNode(log[2]));
-
+              reason = document.createElement('div');
+              //reason.appendChild(document.createTextNode(log[2]));
               reason.innerText = log[2];
               td_msg.appendChild(reason);
             }
-
             if (log[3]) {
               node_attempt = document.createElement('span');
               node_attempt.appendChild(document.createTextNode("[#".concat(log[3], "]")));
               td_msg.insertBefore(node_attempt, node_msg);
             }
-
             if (log[4]) {
               url = document.createElement('div');
               url.appendChild(document.createTextNode("URL: ".concat(log[4])));
               td_msg.appendChild(url);
             }
-
             tr.appendChild(td_date);
             tr.appendChild(td_msg);
             frag.appendChild(tr);
           }
-
           tableBody.innerText = '';
           tableBody.appendChild(frag);
         } else {
@@ -1642,13 +1307,11 @@ exports["default"] = function () {
     },
     askPermission: function askPermission() {
       var _this3 = this;
-
       browser.permissions.request({
         permissions: ['webNavigation']
       }).then(function (granted) {
         if (granted) {
           _this3.emit('granted-permission:webNavigation');
-
           Array.from(document.getElementsByClassName('permission-alert')).forEach(function (alert) {
             return alert.classList.add('u-display--none');
           });
@@ -1656,19 +1319,7 @@ exports["default"] = function () {
       });
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-var _logKeys = __webpack_require__(/*! ../../../data/log-keys */ "./data/log-keys.js");
-
-var _logKeys2 = _interopRequireDefault(_logKeys);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+}
 
 /***/ }),
 
@@ -1676,35 +1327,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!**********************************************!*\
   !*** ./content/addon-page/modules/marker.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = undefined;
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _MARKER)
+/* harmony export */ });
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var _MARKER = /*#__PURE__*/function () {
   function _MARKER(key, customBgColor) {
     var _this = this;
-
     _classCallCheck(this, _MARKER);
-
     this.key = key;
     this.styles = {
       'background-color': customBgColor,
@@ -1727,33 +1367,27 @@ var _MARKER = /*#__PURE__*/function () {
       return _this.inject().preview();
     });
   }
-
   _createClass(_MARKER, [{
     key: "init",
     value: function init() {
       var _this2 = this;
-
-      return _store2["default"].get('markers').then(function (markers) {
+      return _store__WEBPACK_IMPORTED_MODULE_0__["default"].get('markers').then(function (markers) {
         var marker = markers[_this2.key];
         var existingStyle = marker ? marker.style : null;
         _this2.autonote = marker && marker.autonote ? true : false;
         if (!existingStyle) _this2.setStyle();else _this2.style = existingStyle;
-
         var styles = _this2.style.split(';'),
-            i = styles.length,
-            style,
-            styleSplit,
-            textShadow;
-
+          i = styles.length,
+          style,
+          styleSplit,
+          textShadow;
         while (i--) {
           style = styles[i];
-
           if (style) {
             styleSplit = style.split(':');
             _this2.styles[styleSplit[0]] = styleSplit[1];
           }
         }
-
         if ((textShadow = _this2.styles['text-shadow']) && textShadow !== 'none') {
           var shadowSplit = textShadow.split(' ');
           _this2.shadow.x = shadowSplit[0];
@@ -1767,18 +1401,18 @@ var _MARKER = /*#__PURE__*/function () {
     key: "inject",
     value: function inject() {
       var marker = this,
-          styles = this.styles,
-          bgInput = document.getElementById('bg-color'),
-          colorInput = document.getElementById('text-color'),
-          borderInput = document.getElementById('border-color'),
-          autonoteInput = document.getElementById('autonote-color'),
-          bg = styles['background-color'],
-          color = styles['color'],
-          border = styles['border-bottom'],
-          autonoteColor = this.autonote || '',
-          shadow,
-          shadowSelect,
-          i;
+        styles = this.styles,
+        bgInput = document.getElementById('bg-color'),
+        colorInput = document.getElementById('text-color'),
+        borderInput = document.getElementById('border-color'),
+        autonoteInput = document.getElementById('autonote-color'),
+        bg = styles['background-color'],
+        color = styles['color'],
+        border = styles['border-bottom'],
+        autonoteColor = this.autonote || '',
+        shadow,
+        shadowSelect,
+        i;
       document.getElementById('auto-note').checked = this.autonote;
       autonoteInput.value = autonoteColor || 'yellow';
       autonoteInput.disabled = !autonoteColor;
@@ -1814,9 +1448,8 @@ var _MARKER = /*#__PURE__*/function () {
     key: "update",
     value: function update(el) {
       var classes = el.classList,
-          prop = el.name,
-          val;
-
+        prop = el.name,
+        val;
       if (classes.contains('css-color')) {
         if (el.checked) {
           val = document.getElementById(el.getAttribute('data-target')).value;
@@ -1829,20 +1462,16 @@ var _MARKER = /*#__PURE__*/function () {
         val = el.value;
         if (val === 'default' || !this.isValid(prop, val)) this.styles[prop] = '';else {
           var marker = this;
-
           switch (val) {
             case 'none':
               marker.styles['text-shadow'] = 'none';
               break;
-
             case 'default':
               marker.styles['text-shadow'] = undefined;
               break;
-
             case 'shadow':
               marker.setShadow();
               break;
-
             default:
               return false;
           }
@@ -1861,67 +1490,52 @@ var _MARKER = /*#__PURE__*/function () {
         val = el.value;
         if (val === 'default' || !this.isValid(prop, val)) this.styles[prop] = '';else this.styles[prop] = val;
       }
-
       return this.setStyle().preview();
     }
   }, {
     key: "isValid",
     value: function isValid(prop, val) {
       var valid;
-
       switch (prop) {
         case 'background-color':
           valid = /^#[0-9A-F]{6}$/i.test(val);
           break;
-
         case 'color':
           valid = /^#[0-9A-F]{6}$/i.test(val);
           break;
-
         case 'border-bottom':
           valid = /^#[0-9A-F]{6}$/i.test(val);
           break;
-
         case 'font-size':
           valid = /^[0-9]{1,2}px$/.test(val);
           break;
-
         case 'font-family':
           valid = /^[a-z,\s-]{5,40}$/i.test(val);
           break;
-
         case 'font-weight':
           valid = /^[a-z]{4,7}$/i.test(val);
           break;
-
         case 'font-style':
           valid = /^[a-z]{4,7}$/i.test(val);
           break;
-
         case 'text-decoration':
           valid = /^[a-z-]{7,12}$/i.test(val);
           break;
-
         case 'text-shadow':
           valid = /^[a-z]{4,7}$/i.test(val);
           break;
-
         case 'x':
           valid = /^\d$/;
           break;
-
         case 'y':
           valid = /^\d$/;
           break;
-
         case 'blur':
           valid = /^\d$/;
           break;
-
         default:
           valid = false;
       }
-
       return valid;
     }
   }, {
@@ -1933,22 +1547,18 @@ var _MARKER = /*#__PURE__*/function () {
     key: "setStyle",
     value: function setStyle() {
       var style = '',
-          val;
-
+        val;
       for (var i in this.styles) {
         val = this.styles[i];
         if (val) style += i + ':' + val + ';';
       }
-
       this.style = style;
       return this;
     }
   }]);
-
   return _MARKER;
 }();
 
-exports["default"] = _MARKER;
 
 /***/ }),
 
@@ -1956,18 +1566,16 @@ exports["default"] = _MARKER;
 /*!*******************************************!*\
   !*** ./content/addon-page/modules/nav.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function (el) {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: el,
     events: {
       DOM: {
@@ -1982,7 +1590,6 @@ exports["default"] = function (el) {
     autoinit: function autoinit() {
       this.pageNav = el.hasAttribute('data-page-nav');
       var current = this.current = el.getElementsByClassName('active')[0];
-
       if (current) {
         this.open(current);
       }
@@ -2005,9 +1612,7 @@ exports["default"] = function (el) {
       document.getElementById(el.getAttribute('data-target')).classList.add('u-display--none');
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+}
 
 /***/ }),
 
@@ -2015,18 +1620,16 @@ var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared
 /*!***************************************************!*\
   !*** ./content/addon-page/modules/permissions.js ***!
   \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function () {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: document.getElementById('permission-alert'),
     events: {
       DOM: {
@@ -2037,7 +1640,6 @@ exports["default"] = function () {
     },
     autoinit: function autoinit() {
       var _this = this;
-
       browser.permissions.contains({
         permissions: ['webNavigation']
       }).then(function (granted) {
@@ -2048,13 +1650,11 @@ exports["default"] = function () {
     },
     askPermission: function askPermission() {
       var _this2 = this;
-
       browser.permissions.request({
         permissions: ['webNavigation']
       }).then(function (granted) {
         if (granted) {
           _this2.emit('granted-permission:webNavigation');
-
           Array.from(document.getElementsByClassName('permission-alert')).forEach(function (alert) {
             return alert.classList.add('u-display--none');
           });
@@ -2062,9 +1662,7 @@ exports["default"] = function () {
       });
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+}
 
 /***/ }),
 
@@ -2072,18 +1670,20 @@ var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared
 /*!************************************************!*\
   !*** ./content/addon-page/modules/settings.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
+/* harmony import */ var _marker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./marker */ "./content/addon-page/modules/marker.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 
-exports["default"] = function () {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: document.getElementById('settings'),
     events: {
       ENV: {
@@ -2141,19 +1741,16 @@ exports["default"] = function () {
     },
     init: function init() {
       var _this = this;
-
-      _store2["default"].get('settings').then(function (settings) {
+      _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('settings').then(function (settings) {
         var markers = settings.markers,
-            markerKeys = _this.markerKeys,
-            customMarkerKeys = _this.customMarkerKeys,
-            i,
-            key;
-
+          markerKeys = _this.markerKeys,
+          customMarkerKeys = _this.customMarkerKeys,
+          i,
+          key;
         for (key in markers) {
           i = key.toLowerCase();
           if (!markerKeys.includes(i) && !customMarkerKeys.includes(i)) _this.customMarkerKeys.push(i);
         }
-
         _this.renderMarkerSelectOptions().updateMarker(_this.marker ? _this.marker.key : 'm').injectSettings(settings);
       });
     },
@@ -2172,28 +1769,27 @@ exports["default"] = function () {
     },
     updateMarker: function updateMarker(e, el, customBgColor) {
       var key = el ? el.value : e ? e : this.marker ? this.marker.key : 'm';
-      this.marker = new _marker2["default"](key, customBgColor);
+      this.marker = new _marker__WEBPACK_IMPORTED_MODULE_2__["default"](key, customBgColor);
       return this;
     },
     renderMarkerSelectOptions: function renderMarkerSelectOptions() {
       var keySelect = document.getElementById('customized-key'),
-          keyIcons = document.getElementById('custom-keys'),
-          addKeySelect = document.getElementById('add-key'),
-          removeKeySelect = document.getElementById('remove-key'),
-          allowedKeys = this.allowedKeys,
-          customMarkerKeys = this.customMarkerKeys,
-          a = allowedKeys.length,
-          c = customMarkerKeys.length,
-          i = 0,
-          fragment1 = document.createDocumentFragment(),
-          fragment2 = document.createDocumentFragment(),
-          fragment3 = document.createDocumentFragment(),
-          fragment4 = document.createDocumentFragment(),
-          option,
-          icon,
-          val,
-          Val;
-
+        keyIcons = document.getElementById('custom-keys'),
+        addKeySelect = document.getElementById('add-key'),
+        removeKeySelect = document.getElementById('remove-key'),
+        allowedKeys = this.allowedKeys,
+        customMarkerKeys = this.customMarkerKeys,
+        a = allowedKeys.length,
+        c = customMarkerKeys.length,
+        i = 0,
+        fragment1 = document.createDocumentFragment(),
+        fragment2 = document.createDocumentFragment(),
+        fragment3 = document.createDocumentFragment(),
+        fragment4 = document.createDocumentFragment(),
+        option,
+        icon,
+        val,
+        Val;
       for (; i < c; i++) {
         val = customMarkerKeys[i];
         Val = val.toUpperCase();
@@ -2210,11 +1806,9 @@ exports["default"] = function () {
         icon.id = 'custom-key-' + val;
         icon.innerText = Val;
       }
-
       keySelect.appendChild(fragment1);
       keyIcons.appendChild(fragment2);
       removeKeySelect.appendChild(fragment3);
-
       for (i = 0; i < a; i++) {
         val = allowedKeys[i].toLowerCase();
         if (customMarkerKeys.includes(val)) continue;
@@ -2225,18 +1819,16 @@ exports["default"] = function () {
         option.innerText = Val;
         option.className = 'custom-marker-option custom-marker-option-' + val;
       }
-
       addKeySelect.appendChild(fragment4);
       return this;
     },
     injectSettings: function injectSettings(settings) {
       var shortcuts = settings.shortcuts,
-          i,
-          scCheckbox,
-          scSelect,
-          cmCheckbox,
-          sc;
-
+        i,
+        scCheckbox,
+        scSelect,
+        cmCheckbox,
+        sc;
       for (i in shortcuts) {
         sc = shortcuts[i];
         scCheckbox = document.getElementById('sc-' + i);
@@ -2246,9 +1838,8 @@ exports["default"] = function () {
         if (scSelect) scSelect.value = sc[0];
         if (cmCheckbox) cmCheckbox.checked = sc[2];
       }
-
       var historySettings = settings.history,
-          saveOpts = document.getElementsByName('save-opt');
+        saveOpts = document.getElementsByName('save-opt');
       if (historySettings.autosave) saveOpts[0].checked = true;else saveOpts[1].checked = true;
       document.getElementById('name-' + historySettings.naming).checked = true;
       document.getElementById('private-save').checked = historySettings.saveInPriv;
@@ -2257,14 +1848,12 @@ exports["default"] = function () {
       document.getElementById('autoRetry').checked = historySettings.autoRetry;
       document.getElementById('notes-new').checked = historySettings.saveNote;
       document.getElementById('ignore-hash').checked = !historySettings.ignoreHash;
-
       if (historySettings.download === 'json') {
         document.getElementById('download-json').checked = true;
       } else {
         document.getElementById('download-text').checked = true;
         document.getElementById('quickbutton-download-select').value = historySettings.download;
       }
-
       var miscSettings = settings.misc;
       document.getElementById('mark-method--' + miscSettings.markmethod).checked = true;
       document.getElementById('misc-bm').checked = miscSettings.bmicon;
@@ -2283,13 +1872,11 @@ exports["default"] = function () {
       document.getElementById('custom-search--end').value = miscSettings.customSearch ? miscSettings.customSearch[1] : '';
       document.getElementById('tmuipos--noteicon').value = miscSettings.tmuipos;
       document.getElementById('tmuipos--bmicon').value = miscSettings.tmuipos;
-
       if (miscSettings.tbbpower) {
         document.getElementById('tbbpower-on').checked = true;
       } else {
         document.getElementById('tbbpower-off').checked = true;
       }
-
       document.getElementById('addon-autocs').checked = settings.addon.autocs;
       document.getElementById('addon-iframes').checked = !settings.addon.iframes;
     },
@@ -2331,14 +1918,14 @@ exports["default"] = function () {
     },
     addMarker: function addMarker(e, el) {
       var key = el.value,
-          keySelect = document.getElementById('customized-key'),
-          keyIcons = document.getElementById('custom-keys'),
-          removeKeySelect = document.getElementById('remove-key'),
-          option = el.children[el.selectedIndex],
-          clone = option.cloneNode(true),
-          icon = document.createElement('div'),
-          bgColor = this.getRandomLightColor();
-      if (!key || removeKeySelect.children.length >= 12 || this.allowedKeys.indexOf(key) === -1) return false;
+        keySelect = document.getElementById('customized-key'),
+        keyIcons = document.getElementById('custom-keys'),
+        removeKeySelect = document.getElementById('remove-key'),
+        option = el.children[el.selectedIndex],
+        clone = option.cloneNode(true),
+        icon = document.createElement('div'),
+        bgColor = this.getRandomLightColor();
+      if (!key || removeKeySelect.children.length >= 17 || this.allowedKeys.indexOf(key) === -1) return false;
       removeKeySelect.appendChild(option);
       removeKeySelect.selectedIndex = 0;
       keySelect.appendChild(clone);
@@ -2352,10 +1939,10 @@ exports["default"] = function () {
     },
     removeMarker: function removeMarker(e, el) {
       var key = el.value,
-          keySelect = document.getElementById('customized-key'),
-          keyIcons = document.getElementById('custom-keys'),
-          addKeySelect = document.getElementById('add-key'),
-          option;
+        keySelect = document.getElementById('customized-key'),
+        keyIcons = document.getElementById('custom-keys'),
+        addKeySelect = document.getElementById('add-key'),
+        option;
       if (!key || this.allowedKeys.indexOf(key) === -1) return false;
       option = el.children[el.selectedIndex];
       addKeySelect.appendChild(option);
@@ -2437,7 +2024,6 @@ exports["default"] = function () {
       var inp2 = document.getElementById('custom-search--end');
       var part1 = inp1.value;
       var part2 = inp2.value;
-
       if (!part1 && !part2) {
         inp1.value = this.customSearch;
         inp2.value = '';
@@ -2450,19 +2036,7 @@ exports["default"] = function () {
       return '#' + Math.floor((0.8 + Math.random() * 0.175) * 16777215).toString(16);
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-var _marker = __webpack_require__(/*! ./marker */ "./content/addon-page/modules/marker.js");
-
-var _marker2 = _interopRequireDefault(_marker);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+}
 
 /***/ }),
 
@@ -2470,18 +2044,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!***********************************************!*\
   !*** ./content/addon-page/modules/syncing.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function () {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: document.getElementById('sync'),
     events: {
       ENV: {
@@ -2494,9 +2068,9 @@ exports["default"] = function () {
       }
     },
     autoinit: function autoinit() {
-      document.getElementById('sync-switch--settings').classList.toggle('active', _store2["default"].area_settings === 'sync');
-      document.getElementById('sync-switch--history').classList.toggle('active', _store2["default"].area_history === 'sync');
-      document.getElementById('sync-switch--pagenotes').classList.toggle('active', _store2["default"].area_pagenotes === 'sync');
+      document.getElementById('sync-switch--settings').classList.toggle('active', _store__WEBPACK_IMPORTED_MODULE_1__["default"].area_settings === 'sync');
+      document.getElementById('sync-switch--history').classList.toggle('active', _store__WEBPACK_IMPORTED_MODULE_1__["default"].area_history === 'sync');
+      document.getElementById('sync-switch--pagenotes').classList.toggle('active', _store__WEBPACK_IMPORTED_MODULE_1__["default"].area_pagenotes === 'sync');
     },
     toggleSwitch: function toggleSwitch(e, el) {
       el = el.classList.contains('switch--sync') ? el : el.parentNode;
@@ -2507,15 +2081,7 @@ exports["default"] = function () {
       document.getElementById('sync-switch--' + field).classList.toggle('active');
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+}
 
 /***/ }),
 
@@ -2523,30 +2089,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!***********************************************!*\
   !*** ./content/addon-page/modules/toggler.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _TOGGLER)
+/* harmony export */ });
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var _TOGGLER = /*#__PURE__*/function () {
   function _TOGGLER(el) {
     _classCallCheck(this, _TOGGLER);
-
     this.el = el;
     this.init();
   }
-
   _createClass(_TOGGLER, [{
     key: "init",
     value: function init() {
@@ -2557,10 +2117,9 @@ var _TOGGLER = /*#__PURE__*/function () {
     value: function toggle(e) {
       e.stopPropagation();
       var dataTarget = this.getAttribute('data-target'),
-          targets = dataTarget ? dataTarget.split(' ') : null,
-          dataToggle = this.getAttribute('data-toggle'),
-          roles = dataToggle ? dataToggle.split(' ') : null;
-
+        targets = dataTarget ? dataTarget.split(' ') : null,
+        dataToggle = this.getAttribute('data-toggle'),
+        roles = dataToggle ? dataToggle.split(' ') : null;
       if (roles) {
         roles.forEach(function (role, i) {
           return document.getElementById(targets[i]).classList[role]('open');
@@ -2568,11 +2127,9 @@ var _TOGGLER = /*#__PURE__*/function () {
       } else document.getElementById(targets[0]).disabled = !this.checked;
     }
   }]);
-
   return _TOGGLER;
 }();
 
-exports["default"] = _TOGGLER;
 
 /***/ }),
 
@@ -2580,18 +2137,18 @@ exports["default"] = _TOGGLER;
 /*!*******************************************************!*\
   !*** ./content/addon-page/modules/troubleshooting.js ***!
   \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function () {
-  return new _utils._DOMMODULE({
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  return new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._DOMMODULE({
     el: document.getElementById('troubleshooting'),
     events: {
       DOM: {
@@ -2627,34 +2184,29 @@ exports["default"] = function () {
     scanHistory: function scanHistory() {
       var articles = [document.getElementById('history-scan__error'), document.getElementById('history-scan__empty'), document.getElementById('history-scan__nonempty'), document.getElementById('history-scan__nomarks')];
       var errEl = articles[0],
-          emptyEl = articles[1],
-          nonemptyEl = articles[2],
-          nomarksEl = articles[3];
+        emptyEl = articles[1],
+        nonemptyEl = articles[2],
+        nomarksEl = articles[3];
       articles.forEach(function (a) {
         return a.classList.add('u-display--none');
       });
-
-      _store2["default"].get('history').then(function (history) {
+      _store__WEBPACK_IMPORTED_MODULE_1__["default"].get('history').then(function (history) {
         if (!history || !history.entries) {
           errEl.classList.remove('u-display--none');
         } else {
           var len = history.entries ? Object.keys(history.entries).length : 0;
-
           if (len) {
             nonemptyEl.classList.remove('u-display--none');
             var nomarks = true,
-                entry;
-
+              entry;
             for (var e in history.entries) {
               entry = history.entries[e];
-
               if (entry.marks && entry.marks.length) {
                 document.getElementById('history-scan__count').innerText = len;
                 nomarks = false;
                 break;
               }
             }
-
             if (nomarks) {
               nomarksEl.classList.remove('u-display--none');
             }
@@ -2672,15 +2224,7 @@ exports["default"] = function () {
       });
     }
   });
-};
-
-var _utils = __webpack_require__(/*! ./../../_shared/utils */ "./content/_shared/utils.js");
-
-var _store = __webpack_require__(/*! ./../_store */ "./content/addon-page/_store.js");
-
-var _store2 = _interopRequireDefault(_store);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+}
 
 /***/ }),
 
@@ -2688,36 +2232,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!************************************!*\
   !*** ./content/addon-page/port.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _utils = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
-
-exports["default"] = new _utils._PORT({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new _shared_utils__WEBPACK_IMPORTED_MODULE_0__._PORT({
   name: 'addon-page',
   type: 'content',
   events: {
     ONEOFF: ['change:style-setting', 'change:autonote-setting', 'change:mark-method-setting', 'toggle:shortcut-setting', 'change:shortcut-setting', 'toggle:ctm-setting', 'change:saveopt-setting', 'toggle:priv-setting', 'change:immut-setting', 'change:dropLosses-setting', 'change:autoRetry-setting', 'change:namingopt-setting', 'change:sort-setting', 'change:view-setting', 'change:hash-setting', 'toggle:noteopt-setting', 'toggle:quickbuttonopt-setting', 'switch:quickbuttonopt-setting', 'toggle:notification-setting', 'toggle:misc-setting', 'change:misc-setting', 'toggle:tbbpower-setting', 'change:autocs-setting', 'change:iframe-setting', 'add:custom-marker', 'remove:custom-marker', 'delete:entries', 'clean:entries', 'open:entries', 'rename:entry', 'correct-name:entry', 'view:entry', 'sync:entry', 'sync:history', 'sync:settings', 'import:storage', 'toggle:sync', 'change:custom-search-setting', 'changed:per-page-count', 'error:browser-console', 'clear:logs', 'tag:entries', 'granted-permission:webNavigation']
   }
-});
-
-/***/ }),
-
-/***/ "./content/addon-page/sass/index.scss":
-/*!********************************************!*\
-  !*** ./content/addon-page/sass/index.scss ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
+}));
 
 /***/ }),
 
@@ -2725,16 +2254,13 @@ exports["default"] = new _utils._PORT({
 /*!*********************************!*\
   !*** ./data/default-storage.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   version: browser.runtime.getManifest().version,
   settings: {
     shortcuts: {
@@ -2855,7 +2381,7 @@ exports["default"] = {
     history: false,
     pagenotes: false
   }
-};
+});
 
 /***/ }),
 
@@ -2863,16 +2389,13 @@ exports["default"] = {
 /*!**************************!*\
   !*** ./data/log-keys.js ***!
   \**************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   note_pbm: 1,
   note_restoration_failure: 2,
   note_url: 3,
@@ -2919,10 +2442,9 @@ exports["default"] = {
         break;
       }
     }
-
     return '';
   }
-};
+});
 
 /***/ }),
 
@@ -2930,36 +2452,27 @@ exports["default"] = {
 /*!***********************!*\
   !*** ./utils/copy.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_COPY": () => (/* binding */ _COPY)
+/* harmony export */ });
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 var _COPY = function _COPY(src) {
   var target = Array.isArray(src) ? [] : {};
   var val;
-
   for (var prop in src) {
     if (src.hasOwnProperty(prop)) {
       val = src[prop];
-
       if (val !== null && _typeof(val) === 'object') {
         target[prop] = _COPY(val);
       } else target[prop] = val;
     }
   }
-
   return target;
 };
 
-exports._COPY = _COPY;
 
 /***/ }),
 
@@ -2967,51 +2480,33 @@ exports._COPY = _COPY;
 /*!****************************!*\
   !*** ./utils/dommodule.js ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports._DOMMODULE = undefined;
-
-var _module = __webpack_require__(/*! ./module */ "./utils/module.js");
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_DOMMODULE": () => (/* binding */ _DOMMODULE)
+/* harmony export */ });
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module */ "./utils/module.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
+var _DOMMODULE = /*#__PURE__*/function (_MODULE2) {
   _inherits(_DOMMODULE, _MODULE2);
-
   var _super = _createSuper(_DOMMODULE);
-
   function _DOMMODULE(obj) {
     var _this;
-
     _classCallCheck(this, _DOMMODULE);
-
     obj._bound = {};
     obj._extraBound = [];
     _this = _super.call(this, obj);
@@ -3019,19 +2514,17 @@ var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
     !_this.autoPause || _this.setAutoPause();
     return _this;
   }
-
   _createClass(_DOMMODULE, [{
     key: "generalHandler",
     value: function generalHandler(subMap, type, e) {
       var el = e.target,
-          selector,
-          _sel,
-          meth,
-          f,
-          isId,
-          isClass,
-          isDoc;
-
+        selector,
+        _sel,
+        meth,
+        f,
+        isId,
+        isClass,
+        isDoc;
       for (selector in subMap) {
         f = selector[0];
         _sel = selector;
@@ -3039,7 +2532,6 @@ var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
         isClass = f === '.';
         isDoc = f === '*';
         if (isId || isClass) selector = selector.substr(1);
-
         if (isDoc || isClass && el.classList.contains(selector) || isId && el.id === selector || el.nodeName.toLowerCase() === selector) {
           meth = subMap[_sel];
           if (typeof meth === 'function') meth(e, el);else if (this[meth]) this[meth](e, el);
@@ -3051,7 +2543,6 @@ var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
     key: "setAutoPause",
     value: function setAutoPause() {
       var _this2 = this;
-
       this.on('toggled:addon', function (on) {
         if (on) _this2.addListeners();else _this2.removeListeners();
       });
@@ -3062,10 +2553,8 @@ var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
       el = el || this.el;
       var handler = typeof meth === 'function' ? meth : this[meth];
       el.addEventListener(type, handler, false);
-
       if (el === this.el) {
         if (!this._bound[type]) this._bound[type] = [];
-
         this._bound[type].push(handler);
       } else {
         this._extraBound.push([el, type, handler]);
@@ -3075,19 +2564,17 @@ var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
     key: "addListeners",
     value: function addListeners() {
       var events = this.events,
-          domEvents,
-          el,
-          subMap,
-          type,
-          handler;
+        domEvents,
+        el,
+        subMap,
+        type,
+        handler;
       if (!events || !(domEvents = events.DOM) || !(el = this.el)) return false;
-
       for (type in domEvents) {
         subMap = domEvents[type];
         handler = this.proxy(this, this.generalHandler, subMap, type);
         el.addEventListener(type, handler, false);
         if (!this._bound[type]) this._bound[type] = [];
-
         this._bound[type].push(handler);
       }
     }
@@ -3095,32 +2582,26 @@ var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
     key: "removeListeners",
     value: function removeListeners() {
       var type, _bound, l;
-
       for (type in this._bound) {
         _bound = this._bound[type];
         l = _bound.length;
-
         while (l--) {
           this.el.removeEventListener(type, _bound[l], false);
-
           _bound.splice(l, 1);
         }
       }
-
       var _extra = this._extraBound,
-          i = 0,
-          set;
+        i = 0,
+        set;
       l = _extra.length;
-
       for (; i < l; i++) {
         set = _extra[i];
         set[0].removeEventListener(set[1], set[2], false);
       }
     }
   }]);
-
   return _DOMMODULE;
-}(_module._MODULE);
+}(_module__WEBPACK_IMPORTED_MODULE_0__._MODULE);
 
 /***/ }),
 
@@ -3128,25 +2609,19 @@ var _DOMMODULE = /*#__PURE__*/exports._DOMMODULE = function (_MODULE2) {
 /*!********************************!*\
   !*** ./utils/error-tracker.js ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module */ "./utils/module.js");
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _module = __webpack_require__(/*! ./module */ "./utils/module.js");
-
-var _ERRORTRACKER = new _module._MODULE({
+var _ERRORTRACKER = new _module__WEBPACK_IMPORTED_MODULE_0__._MODULE({
   autoinit: function autoinit() {
     var _this = this;
-
     window.addEventListener('error', function (error) {
       var file = error.filename.split('/').pop();
-
       if (['sidebar.wp.js', 'tbb-menu.wp.js', 'options.wp.js', 'addon-page.wp.js'].includes(file)) {
         _this.emit('error:browser-console', {
           message: error.message,
@@ -3157,8 +2632,7 @@ var _ERRORTRACKER = new _module._MODULE({
     }, false);
   }
 });
-
-exports["default"] = _ERRORTRACKER;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_ERRORTRACKER);
 
 /***/ }),
 
@@ -3166,23 +2640,18 @@ exports["default"] = _ERRORTRACKER;
 /*!*************************!*\
   !*** ./utils/extend.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function (obj1, obj2) {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(obj1, obj2) {
   for (var i in obj2) {
     if (!obj1[i]) obj1[i] = obj2[i];
   }
-
   return obj1;
-};
+}
 
 /***/ }),
 
@@ -3190,16 +2659,12 @@ exports["default"] = function (obj1, obj2) {
 /*!*******************************!*\
   !*** ./utils/getActiveTab.js ***!
   \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_GET_ACTIVE_TAB": () => (/* binding */ _GET_ACTIVE_TAB)
+/* harmony export */ });
 var _GET_ACTIVE_TAB = function _GET_ACTIVE_TAB() {
   return browser.tabs.query({
     currentWindow: true,
@@ -3209,7 +2674,6 @@ var _GET_ACTIVE_TAB = function _GET_ACTIVE_TAB() {
   });
 };
 
-exports._GET_ACTIVE_TAB = _GET_ACTIVE_TAB;
 
 /***/ }),
 
@@ -3217,23 +2681,18 @@ exports._GET_ACTIVE_TAB = _GET_ACTIVE_TAB;
 /*!***************************!*\
   !*** ./utils/hashless.js ***!
   \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_HASHLESS": () => (/* binding */ _HASHLESS)
+/* harmony export */ });
 var _HASHLESS = function _HASHLESS(url) {
   if (!url) return '';
   var h = url.lastIndexOf('#');
   if (h === -1) return url;else return url.substr(0, h);
 };
 
-exports._HASHLESS = _HASHLESS;
 
 /***/ }),
 
@@ -3241,32 +2700,15 @@ exports._HASHLESS = _HASHLESS;
 /*!***********************!*\
   !*** ./utils/l10n.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports["default"] = function () {
-  document.addEventListener('DOMContentLoaded', function () {
-    return translateDocument();
-  }, {
-    capture: false,
-    passive: true,
-    once: true
-  });
-};
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 /*
 * Translates a HTMl page in the web l10n style from the Add-on SDK with WebExtensions strings.
 * Modified by underflyingbirches
@@ -3276,25 +2718,21 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 * @license MPL-2.0
 */
 function translateDocument() {
-  var el, data, dataset; // Set the language attribute of the document.
-
-  document.documentElement.setAttribute('lang', browser.i18n.getUILanguage().replace('_', '-')); // Get all elements that are marked as being translateable.
-
+  var el, data, dataset;
+  // Set the language attribute of the document.
+  document.documentElement.setAttribute('lang', browser.i18n.getUILanguage().replace('_', '-'));
+  // Get all elements that are marked as being translateable.
   var textElements = document.querySelectorAll('*[data-l10n-id]');
   var attrElements = document.querySelectorAll('*[data-l10n-attr]');
-
   var _iterator = _createForOfIteratorHelper(textElements),
-      _step;
-
+    _step;
   try {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       el = _step.value;
       dataset = el.dataset;
       var l10nId = dataset.l10nId;
-
       if (l10nId) {
         data = browser.i18n.getMessage(l10nId, '');
-
         if (data && data != '??') {
           el.textContent = data;
         }
@@ -3305,20 +2743,16 @@ function translateDocument() {
   } finally {
     _iterator.f();
   }
-
   var _iterator2 = _createForOfIteratorHelper(attrElements),
-      _step2;
-
+    _step2;
   try {
     for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
       el = _step2.value;
       dataset = el.dataset;
       ['Title', 'Placeholder', 'Href'].forEach(function (attr) {
         var l10nAttr = dataset['l10n' + attr];
-
         if (l10nAttr) {
           data = browser.i18n.getMessage(l10nAttr);
-
           if (data && data != '??') {
             el.setAttribute(attr.toLowerCase(), data);
           }
@@ -3331,6 +2765,15 @@ function translateDocument() {
     _iterator2.f();
   }
 }
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  document.addEventListener('DOMContentLoaded', function () {
+    return translateDocument();
+  }, {
+    capture: false,
+    passive: true,
+    once: true
+  });
+}
 
 /***/ }),
 
@@ -3338,29 +2781,23 @@ function translateDocument() {
 /*!***************************!*\
   !*** ./utils/mediator.js ***!
   \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _default)
+/* harmony export */ });
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var topics = {};
-
 var _default = /*#__PURE__*/function () {
   function _default() {
     _classCallCheck(this, _default);
   }
-
   _createClass(_default, [{
     key: "on",
     value: function on(event, handler) {
@@ -3371,16 +2808,13 @@ var _default = /*#__PURE__*/function () {
     key: "emit",
     value: function emit(events) {
       var _this = this;
-
       for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
         args[_key - 1] = arguments[_key];
       }
-
       events = events.split(' ');
       var i = 0,
-          l = events.length,
-          topic;
-
+        l = events.length,
+        topic;
       for (; i < l; i++) {
         topic = topics[events[i]];
         if (topic) topic.forEach(function (handler) {
@@ -3394,7 +2828,6 @@ var _default = /*#__PURE__*/function () {
       for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
         args[_key2 - 1] = arguments[_key2];
       }
-
       if (this.type === 'background') {
         return browser.tabs.sendMessage(args[0].tabId, {
           ev: event,
@@ -3416,21 +2849,17 @@ var _default = /*#__PURE__*/function () {
       for (var _len3 = arguments.length, args1 = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
         args1[_key3 - 2] = arguments[_key3];
       }
-
       return function () {
         for (var _len4 = arguments.length, args2 = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
           args2[_key4] = arguments[_key4];
         }
-
         return func.apply(context, args1.concat(args2));
       };
     }
   }]);
-
   return _default;
 }();
 
-exports["default"] = _default;
 
 /***/ }),
 
@@ -3438,76 +2867,53 @@ exports["default"] = _default;
 /*!*************************!*\
   !*** ./utils/module.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports._MODULE = undefined;
-
-var _mediator = __webpack_require__(/*! ./mediator */ "./utils/mediator.js");
-
-var _mediator2 = _interopRequireDefault(_mediator);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_MODULE": () => (/* binding */ _MODULE)
+/* harmony export */ });
+/* harmony import */ var _mediator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mediator */ "./utils/mediator.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var _MODULE = /*#__PURE__*/exports._MODULE = function (_MEDIATOR2) {
+var _MODULE = /*#__PURE__*/function (_MEDIATOR2) {
   _inherits(_MODULE, _MEDIATOR2);
-
   var _super = _createSuper(_MODULE);
-
   function _MODULE(obj) {
     var _this;
-
     _classCallCheck(this, _MODULE);
-
     _this = _super.call(this);
-
     for (o in obj) {
       _this[o] = obj[o];
     }
-
     var events = _this.events,
-        envEvents,
-        o,
-        e,
-        handler;
-
+      envEvents,
+      o,
+      e,
+      handler;
     if (events && (envEvents = events.ENV)) {
       for (e in envEvents) {
         handler = envEvents[e];
         if (_this[handler]) _this.on(e, _this.proxy(_assertThisInitialized(_this), _this[handler]));
       }
     }
-
     !_this.autoinit || _this.autoinit();
     return _this;
   }
-
-  return _MODULE;
-}(_mediator2["default"]);
+  return _createClass(_MODULE);
+}(_mediator__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -3515,65 +2921,43 @@ var _MODULE = /*#__PURE__*/exports._MODULE = function (_MEDIATOR2) {
 /*!***********************!*\
   !*** ./utils/port.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports._BGPORT = exports._PRIVPORT = exports._PORT = undefined;
-
-var _module = __webpack_require__(/*! ./module */ "./utils/module.js");
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_BGPORT": () => (/* binding */ _BGPORT),
+/* harmony export */   "_PORT": () => (/* binding */ _PORT),
+/* harmony export */   "_PRIVPORT": () => (/* binding */ _PRIVPORT)
+/* harmony export */ });
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module */ "./utils/module.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 var _PORT = /*#__PURE__*/function (_MODULE2) {
   _inherits(_PORT, _MODULE2);
-
   var _super = _createSuper(_PORT);
-
   function _PORT(obj) {
     var _this;
-
     _classCallCheck(this, _PORT);
-
     _this = _super.call(this, obj);
     browser.runtime.onMessage.addListener(_this.proxy(_assertThisInitialized(_this), _this.passMessage));
-
     _this.registerOneOffEvents();
-
     return _this;
   }
-
   _createClass(_PORT, [{
     key: "extend",
     value: function extend(events) {
@@ -3583,11 +2967,9 @@ var _PORT = /*#__PURE__*/function (_MODULE2) {
     key: "registerOneOffEvents",
     value: function registerOneOffEvents(events) {
       events || (events = this.events.ONEOFF);
-
       if (events) {
         var _iterator = _createForOfIteratorHelper(events),
-            _step;
-
+          _step;
         try {
           for (_iterator.s(); !(_step = _iterator.n()).done;) {
             var e = _step.value;
@@ -3608,18 +2990,15 @@ var _PORT = /*#__PURE__*/function (_MODULE2) {
       if (!sender || !sender.name) args = args.concat(sender, sendResponse);
       this.emit.apply(this, args);
       if (req.wait) return true; // this will keep the message channel open to the other end until `sendResponse` is called
-
       return false;
     }
   }, {
     key: "sendMessage",
     value: function sendMessage(e) {
       var type = this.type;
-
       for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
         args[_key - 1] = arguments[_key];
       }
-
       var msg = {
         ev: e,
         args: args
@@ -3627,15 +3006,13 @@ var _PORT = /*#__PURE__*/function (_MODULE2) {
       if (type === 'content') browser.runtime.sendMessage(msg)["catch"](function () {});else if (type === 'background') {
         var lastArg = args[args.length - 1];
         var tab;
-
         if (lastArg && (tab = lastArg.tab)) {
           if (tab === 'active') {
             browser.tabs.query({
               active: true
             }).then(function (tabs) {
               var _iterator2 = _createForOfIteratorHelper(tabs),
-                  _step2;
-
+                _step2;
               try {
                 for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
                   var _tab = _step2.value;
@@ -3655,12 +3032,9 @@ var _PORT = /*#__PURE__*/function (_MODULE2) {
             })["catch"](function () {});
           }
         } else {
-          browser.tabs.query({
-            /* currentWindow: false, active: false */
-          }).then(function (tabs) {
+          browser.tabs.query({/* currentWindow: false, active: false */}).then(function (tabs) {
             var _iterator3 = _createForOfIteratorHelper(tabs),
-                _step3;
-
+              _step3;
             try {
               for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
                 var _tab2 = _step3.value;
@@ -3676,43 +3050,31 @@ var _PORT = /*#__PURE__*/function (_MODULE2) {
       }
     }
   }]);
-
   return _PORT;
-}(_module._MODULE);
-
+}(_module__WEBPACK_IMPORTED_MODULE_0__._MODULE);
 var _PRIVPORT = /*#__PURE__*/function (_PORT2) {
   _inherits(_PRIVPORT, _PORT2);
-
   var _super2 = _createSuper(_PRIVPORT);
-
   function _PRIVPORT(obj) {
     var _this2;
-
     _classCallCheck(this, _PRIVPORT);
-
     _this2 = _super2.call(this, obj);
     _this2.port = null;
     _this2.portListener = null;
-
     _this2.connect();
-
     _this2.registerConnectionBasedEvents();
-
     window.addEventListener('pagehide', function () {
       !_this2.port || _this2.port.onMessage.removeListener(_this2.portListener);
     });
     return _this2;
   }
-
   _createClass(_PRIVPORT, [{
     key: "registerConnectionBasedEvents",
     value: function registerConnectionBasedEvents() {
       var events = this.events.CONNECTION;
-
       if (events) {
         var _iterator4 = _createForOfIteratorHelper(events),
-            _step4;
-
+          _step4;
         try {
           for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
             var e = _step4.value;
@@ -3731,7 +3093,6 @@ var _PRIVPORT = /*#__PURE__*/function (_PORT2) {
       for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
         args[_key2 - 1] = arguments[_key2];
       }
-
       var msg = {
         ev: e,
         args: args
@@ -3748,39 +3109,27 @@ var _PRIVPORT = /*#__PURE__*/function (_PORT2) {
       port.onMessage.addListener(listener);
     }
   }]);
-
   return _PRIVPORT;
 }(_PORT);
-
 var _BGPORT = /*#__PURE__*/function (_PORT3) {
   _inherits(_BGPORT, _PORT3);
-
   var _super3 = _createSuper(_BGPORT);
-
   function _BGPORT(obj) {
     var _this3;
-
     _classCallCheck(this, _BGPORT);
-
     _this3 = _super3.call(this, obj);
     _this3.ports = {};
-
     _this3.registerOnConnectListener();
-
     _this3.registerConnectionBasedEvents();
-
     return _this3;
   }
-
   _createClass(_BGPORT, [{
     key: "registerConnectionBasedEvents",
     value: function registerConnectionBasedEvents() {
       var events = this.events.CONNECTION;
-
       if (events) {
         var _iterator5 = _createForOfIteratorHelper(events),
-            _step5;
-
+          _step5;
         try {
           for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
             var e = _step5.value;
@@ -3797,12 +3146,9 @@ var _BGPORT = /*#__PURE__*/function (_PORT3) {
     key: "registerOnConnectListener",
     value: function registerOnConnectListener() {
       var _this4 = this;
-
       browser.runtime.onConnect.addListener(function (port) {
         var ports = _this4.ports;
-
         var listener = _this4.proxy(_this4, _this4.passMessage);
-
         ports[port.name] = port;
         port.onMessage.addListener(listener);
         port.onDisconnect.addListener(function () {
@@ -3815,16 +3161,13 @@ var _BGPORT = /*#__PURE__*/function (_PORT3) {
     key: "postMessage",
     value: function postMessage(e) {
       var ports = this.ports;
-
       for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
         args[_key3 - 1] = arguments[_key3];
       }
-
       var msg = {
         ev: e,
         args: args
       };
-
       for (var p in ports) {
         if (ports.hasOwnProperty(p)) {
           ports[p].postMessage(msg);
@@ -3832,13 +3175,9 @@ var _BGPORT = /*#__PURE__*/function (_PORT3) {
       }
     }
   }]);
-
   return _BGPORT;
 }(_PORT);
 
-exports._PORT = _PORT;
-exports._PRIVPORT = _PRIVPORT;
-exports._BGPORT = _BGPORT;
 
 /***/ }),
 
@@ -3846,71 +3185,47 @@ exports._BGPORT = _BGPORT;
 /*!************************!*\
   !*** ./utils/store.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports._STORE = undefined;
-
-var _module = __webpack_require__(/*! ./module */ "./utils/module.js");
-
-var _defaultStorage = __webpack_require__(/*! ../data/default-storage */ "./data/default-storage.js");
-
-var _defaultStorage2 = _interopRequireDefault(_defaultStorage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "_STORE": () => (/* binding */ _STORE)
+/* harmony export */ });
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module */ "./utils/module.js");
+/* harmony import */ var _data_default_storage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/default-storage */ "./data/default-storage.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
+var _STORE = /*#__PURE__*/function (_MODULE2) {
   _inherits(_STORE, _MODULE2);
-
   var _super = _createSuper(_STORE);
-
   function _STORE(obj) {
     var _this;
-
     _classCallCheck(this, _STORE);
-
     _this = _super.call(this, obj);
     _this.initialized = false;
     _this.initializing = false;
-    _this.area_settings = _defaultStorage2["default"].sync.settings ? 'sync' : 'local';
-    _this.area_history = _defaultStorage2["default"].sync.history ? 'sync' : 'local';
-    _this.area_pagenotes = _defaultStorage2["default"].sync.pagenotes ? 'sync' : 'local';
+    _this.area_settings = _data_default_storage__WEBPACK_IMPORTED_MODULE_1__["default"].sync.settings ? 'sync' : 'local';
+    _this.area_history = _data_default_storage__WEBPACK_IMPORTED_MODULE_1__["default"].sync.history ? 'sync' : 'local';
+    _this.area_pagenotes = _data_default_storage__WEBPACK_IMPORTED_MODULE_1__["default"].sync.pagenotes ? 'sync' : 'local';
     return _this;
   }
-
   _createClass(_STORE, [{
     key: "init",
     value: function init() {
       var _this2 = this;
-
       return browser.storage.local.get().then(function (storage) {
         if (storage && storage.sync) {
           _this2.setAreas(storage.sync);
@@ -3928,7 +3243,6 @@ var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
     key: "onToggledSync",
     value: function onToggledSync() {
       var _this3 = this;
-
       this.init().then(function () {
         return _this3.emit('set-areas-after-sync-change');
       });
@@ -3937,9 +3251,7 @@ var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
     key: "get",
     value: function get() {
       var _this4 = this;
-
       var field = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'storage';
-
       if (this.initializing) {
         return new Promise(function (r) {
           return window.setTimeout(function () {
@@ -3947,10 +3259,8 @@ var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
           }, 10);
         });
       }
-
       var meth = this['_get_' + field];
       if (!meth) throw 'field ' + field + ' doesn\'t exist';
-
       if (!this.initialized) {
         this.initializing = true;
         this.initialized = true;
@@ -3959,14 +3269,12 @@ var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
           return _this4['_get_' + field]();
         });
       }
-
       return this['_get_' + field]();
     }
   }, {
     key: "_get_storage",
     value: function _get_storage() {
       var _this5 = this;
-
       return browser.storage.local.get().then(function (localStorage) {
         return browser.storage.sync.get().then(function (syncedStorage) {
           ['version', 'logs'].forEach(function (field) {
@@ -3998,12 +3306,12 @@ var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
         return browser.storage.local.get().then(function (localStorage) {
           var localHistory = localStorage.history;
           if (!syncedHistory) return localHistory;
-          if (!localHistory) return syncedHistory; //syncedHistory.order = syncedHistory.order.concat(localHistory.order);
+          if (!localHistory) return syncedHistory;
 
+          //syncedHistory.order = syncedHistory.order.concat(localHistory.order);
           for (var e in localHistory.entries) {
             syncedHistory.entries[e] = localHistory.entries[e];
           }
-
           return syncedHistory;
         });
       });
@@ -4012,7 +3320,7 @@ var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
     key: "_get_settings",
     value: function _get_settings() {
       return browser.storage[this.area_settings].get().then(function (storage) {
-        return storage.settings || _defaultStorage2["default"].settings;
+        return storage.settings || _data_default_storage__WEBPACK_IMPORTED_MODULE_1__["default"].settings;
       });
     }
   }, {
@@ -4032,15 +3340,127 @@ var _STORE = /*#__PURE__*/exports._STORE = function (_MODULE2) {
             return syncedStorage.version || '';
           });
         }
-
         return localStorage.version;
       });
     }
   }]);
-
   return _STORE;
-}(_module._MODULE);
+}(_module__WEBPACK_IMPORTED_MODULE_0__._MODULE);
+
+/***/ }),
+
+/***/ "./content/addon-page/sass/index.scss":
+/*!********************************************!*\
+  !*** ./content/addon-page/sass/index.scss ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
-/******/ });
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!*************************************!*\
+  !*** ./content/addon-page/index.js ***!
+  \*************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/index.scss */ "./content/addon-page/sass/index.scss");
+/* harmony import */ var _shared_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../_shared/utils */ "./content/_shared/utils.js");
+/* harmony import */ var _modules_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/nav */ "./content/addon-page/modules/nav.js");
+/* harmony import */ var _modules_toggler__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/toggler */ "./content/addon-page/modules/toggler.js");
+/* harmony import */ var _port__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./port */ "./content/addon-page/port.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_store */ "./content/addon-page/_store.js");
+/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./bootstrap */ "./content/addon-page/bootstrap.js");
+
+
+
+
+
+
+
+
+(0,_shared_utils__WEBPACK_IMPORTED_MODULE_1__._L10N)();
+
+/* auto-insert current version number */
+document.getElementById('version-number').innerText = browser.runtime.getManifest().version;
+/* end: auto-insert current version number */
+
+/* configure subnavs */
+var subnavs = document.getElementsByClassName('subnav');
+var n = subnavs.length;
+while (n--) {
+  new _modules_nav__WEBPACK_IMPORTED_MODULE_2__["default"](subnavs[n]);
+}
+/* end: configure navs */
+
+/* configure toggle elements */
+var toggleButtons = document.getElementsByClassName('toggle-button'),
+  t = toggleButtons.length;
+while (t--) {
+  new _modules_toggler__WEBPACK_IMPORTED_MODULE_3__["default"](toggleButtons[t]);
+}
+/* end: configure toggle elements */
+})();
+
+/******/ })()
+;

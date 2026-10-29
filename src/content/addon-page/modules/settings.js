@@ -267,7 +267,7 @@ export default function() {
           icon = document.createElement('div'),
           bgColor = this.getRandomLightColor();
 
-      if (!key || removeKeySelect.children.length >= 12 || this.allowedKeys.indexOf(key) === -1) return false;
+      if (!key || removeKeySelect.children.length >= 17 || this.allowedKeys.indexOf(key) === -1) return false;
 
       removeKeySelect.appendChild(option);
       removeKeySelect.selectedIndex = 0;

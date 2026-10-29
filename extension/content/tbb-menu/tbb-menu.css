@@ -1,3 +1,6 @@
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./content/tbb-menu/sass/index.scss ***!
+  \*****************************************************************************************************************************/
 html, body, object, iframe,
 div, h1, h2, h3, h4, h5, h6, p,
 span, a, abbr, img,
@@ -14,32 +17,33 @@ table, caption, tbody, thead, tr, th, td {
   font-family: inherit;
   line-height: normal;
   vertical-align: baseline;
-  color: inherit; }
+  color: inherit;
+}
 
 body {
   width: 200px;
-  font-family: system, 'Segoe UI', Tahoma; }
-
-#depricated {
-  background: #3aad74;
-  color: #fbfbfb;
-  padding: 5px 8px 8px;
+  font-family: system, "Segoe UI", Tahoma;
 }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 ul {
   list-style-type: none;
   font-size: 12px;
-  padding: 5px 0 8px; }
+  padding: 5px 0 8px;
+}
 
 li {
-  padding: 5px 10px; }
-  li:hover {
-    background: rgba(43, 165, 183, 0.1); }
-    li:hover .menu__icon {
-      opacity: 1; }
+  padding: 5px 10px;
+}
+li:hover {
+  background: rgba(43, 165, 183, 0.1);
+}
+li:hover .menu__icon {
+  opacity: 1;
+}
 
 .menu__icon {
   position: relative;
@@ -48,104 +52,131 @@ li {
   height: 16px;
   top: 3px;
   margin-right: 8px;
-  opacity: .5; }
+  opacity: 0.5;
+}
 
 .partingline {
   height: 1px;
   padding: 0;
   background: #e1e2e3;
-  margin: 5px 0; }
+  margin: 5px 0;
+}
 
 .partingline:hover {
-  background: #e1e2e3; }
+  background: #e1e2e3;
+}
 
 #settings .menu__icon {
-  background-image: url(../../icons/tools.png);
+  background-image: url(../../d9383097101a8248b15c.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #history .menu__icon {
-  background-image: url(../../icons/clock.png);
+  background-image: url(../../b87042f78ca7ed87ee88.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #help .menu__icon {
-  background-image: url(../../icons/book.png);
+  background-image: url(../../ebca07220a8461865789.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #contact .menu__icon {
-  background-image: url(../../icons/ghost.png);
+  background-image: url(../../dc1a409576470fccadf4.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #news .menu__icon {
-  background-image: url(../../icons/forklift.png);
+  background-image: url(../../7b2424f79b7c55dc3668.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #sync .menu__icon {
-  background-image: url(../../icons/sync2.png);
+  background-image: url(../../d6020c2de0b966e3e9c0.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #export .menu__icon {
-  background-image: url(../../icons/export.png);
+  background-image: url(../../9f751378b89672df0c7a.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #troubleshooting .menu__icon {
-  background-image: url(../../icons/debug.png);
+  background-image: url(../../6385d7f1651b11205c7b.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #logs .menu__icon {
-  background-image: url(../../icons/dna.png);
+  background-image: url(../../68fb750685d58917076d.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #donate .menu__icon {
-  background-image: url(../../icons/donate.png);
+  background-image: url(../../419c7ab4758f15365f8b.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #github .menu__icon {
-  background-image: url(../../icons/github.png);
+  background-image: url(../../b059ee5ff868c25e414a.png);
   background-repeat: no-repeat;
   background-position: 0 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 #activate {
   padding-left: 22px;
-  color: #fff; }
-  #activate.menu__icon--start {
-    background-image: url(../../icons/start.png);
-    background-repeat: no-repeat;
-    background-position: 0 0, 0 0;
-    background-size: unset, 100%; }
-  #activate.menu__icon--pause {
-    background-image: url(../../icons/pause.png);
-    background-repeat: no-repeat;
-    background-position: 0 0, 0 0;
-    background-size: unset, 100%; }
+  color: #fff;
+}
+#activate.menu__icon--start {
+  background-image: url(../../e9e85399790c32b64ac7.png);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 0;
+  background-size: unset, 100%;
+}
+#activate.menu__icon--pause {
+  background-image: url(../../5af266e3a5088d226bf7.png);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 0;
+  background-size: unset, 100%;
+}
 
 #donate, #github {
-  float: right; }
+  float: right;
+}
 
 footer {
   background: #2ba5b7;
-  padding: 7px 6px 8px 12px; }
-  footer .menu__icon {
-    opacity: .85; }
-    footer .menu__icon:hover {
-      opacity: 1; }
+  padding: 7px 6px 8px 12px;
+}
+footer .menu__icon {
+  opacity: 0.85;
+}
+footer .menu__icon:hover {
+  opacity: 1;
+}
+
+#depricated {
+  background: #3aad74;
+  color: #fbfbfb;
+  padding: 5px 8px 8px;
+}

@@ -1,5 +1,9 @@
+/*!************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./content/page-injections/sass/index.scss ***!
+  \************************************************************************************************************************************/
 tm {
-  display: inline !important; }
+  display: inline !important;
+}
 
 span.textmarker-highlight {
   all: inherit;
@@ -11,145 +15,172 @@ span.textmarker-highlight {
   border: 0;
   outline: 0 !important;
   float: none !important;
-  cursor: pointer; }
-  span.textmarker-highlight--active {
-    border-top: 4px groove #2ba5b7 !important;
-    border-bottom: 4px groove #2ba5b7 !important; }
+  cursor: pointer;
+}
+span.textmarker-highlight--active {
+  border-top: 4px groove #2ba5b7 !important;
+  border-bottom: 4px groove #2ba5b7 !important;
+}
 
 #textmarker-bookmark-anchor {
   padding-left: 15px !important;
-  background-image: url(../../icons/bm2.png) !important;
+  background-image: url(../../8a6dd8e1c79f8185f6ce.png) !important;
   background-repeat: no-repeat;
   background-position: -2px 0, 0 0;
-  background-size: unset, 100%; }
+  background-size: unset, 100%;
+}
 
 .tmnote--green tmnotepalette,
 .tmnote--green tmnoteheader {
-  background: #cfc; }
-
+  background: #cfc;
+}
 .tmnote--green tmnoteactions {
-  background: #efe; }
-  .tmnote--green tmnoteactions:hover {
-    background: #dfd; }
-
+  background: #efe;
+}
+.tmnote--green tmnoteactions:hover {
+  background: #dfd;
+}
 .tmnote--green textarea {
-  background-image: linear-gradient(#efe, #dfd) !important; }
+  background-image: linear-gradient(#efe, #dfd) !important;
+}
 
 .tmnotecolor--green {
   border-color: #dfd;
-  background-image: linear-gradient(#efe, #dfd); }
+  background-image: linear-gradient(#efe, #dfd);
+}
 
 .tmnote--white tmnotepalette,
 .tmnote--white tmnoteheader {
-  background: #eee; }
-
+  background: #eee;
+}
 .tmnote--white tmnoteactions {
-  background: #fff; }
-  .tmnote--white tmnoteactions:hover {
-    background: #eee; }
-
+  background: #fff;
+}
+.tmnote--white tmnoteactions:hover {
+  background: #eee;
+}
 .tmnote--white textarea {
-  background-image: linear-gradient(#fff, #eee) !important; }
+  background-image: linear-gradient(#fff, #eee) !important;
+}
 
 .tmnotecolor--white {
   border-color: #eee;
-  background-image: linear-gradient(#fff, #eee); }
+  background-image: linear-gradient(#fff, #eee);
+}
 
 .tmnote--yellow tmnotepalette,
 .tmnote--yellow tmnoteheader {
-  background: #ffc; }
-
+  background: #ffc;
+}
 .tmnote--yellow tmnoteactions {
-  background: #ffe; }
-  .tmnote--yellow tmnoteactions:hover {
-    background: #ffd; }
-
+  background: #ffe;
+}
+.tmnote--yellow tmnoteactions:hover {
+  background: #ffd;
+}
 .tmnote--yellow textarea {
-  background-image: linear-gradient(#ffe, #ffd) !important; }
+  background-image: linear-gradient(#ffe, #ffd) !important;
+}
 
 .tmnotecolor--yellow {
   border-color: #ffd;
-  background-image: linear-gradient(#ffe, #ffd); }
+  background-image: linear-gradient(#ffe, #ffd);
+}
 
 .tmnote--orange tmnotepalette,
 .tmnote--orange tmnoteheader {
-  background: #feb; }
-
+  background: #feb;
+}
 .tmnote--orange tmnoteactions {
-  background: #fed; }
-  .tmnote--orange tmnoteactions:hover {
-    background: #fec; }
-
+  background: #fed;
+}
+.tmnote--orange tmnoteactions:hover {
+  background: #fec;
+}
 .tmnote--orange textarea {
-  background-image: linear-gradient(#fed, #fec) !important; }
+  background-image: linear-gradient(#fed, #fec) !important;
+}
 
 .tmnotecolor--orange {
   border-color: #fec;
-  background-image: linear-gradient(#fed, #fec); }
+  background-image: linear-gradient(#fed, #fec);
+}
 
 .tmnote--red tmnotepalette,
 .tmnote--red tmnoteheader {
-  background: #fcc; }
-
+  background: #fcc;
+}
 .tmnote--red tmnoteactions {
-  background: #fee; }
-  .tmnote--red tmnoteactions:hover {
-    background: #fdd; }
-
+  background: #fee;
+}
+.tmnote--red tmnoteactions:hover {
+  background: #fdd;
+}
 .tmnote--red textarea {
-  background-image: linear-gradient(#fee, #fdd) !important; }
+  background-image: linear-gradient(#fee, #fdd) !important;
+}
 
 .tmnotecolor--red {
   border-color: #fdd;
-  background-image: linear-gradient(#fee, #fdd); }
+  background-image: linear-gradient(#fee, #fdd);
+}
 
 .tmnote--purple tmnotepalette,
 .tmnote--purple tmnoteheader {
-  background: #ecf; }
-
+  background: #ecf;
+}
 .tmnote--purple tmnoteactions {
-  background: #eef; }
-  .tmnote--purple tmnoteactions:hover {
-    background: #edf; }
-
+  background: #eef;
+}
+.tmnote--purple tmnoteactions:hover {
+  background: #edf;
+}
 .tmnote--purple textarea {
-  background-image: linear-gradient(#eef, #edf) !important; }
+  background-image: linear-gradient(#eef, #edf) !important;
+}
 
 .tmnotecolor--purple {
   border-color: #edf;
-  background-image: linear-gradient(#eef, #edf); }
+  background-image: linear-gradient(#eef, #edf);
+}
 
 .tmnote--blue tmnotepalette,
 .tmnote--blue tmnoteheader {
-  background: #bef; }
-
+  background: #bef;
+}
 .tmnote--blue tmnoteactions {
-  background: #def; }
-  .tmnote--blue tmnoteactions:hover {
-    background: #cef; }
-
+  background: #def;
+}
+.tmnote--blue tmnoteactions:hover {
+  background: #cef;
+}
 .tmnote--blue textarea {
-  background-image: linear-gradient(#def, #cef) !important; }
+  background-image: linear-gradient(#def, #cef) !important;
+}
 
 .tmnotecolor--blue {
   border-color: #cef;
-  background-image: linear-gradient(#def, #cef); }
+  background-image: linear-gradient(#def, #cef);
+}
 
 .tmnote--turquoise tmnotepalette,
 .tmnote--turquoise tmnoteheader {
-  background: #b9e4ec; }
-
+  background: #b9e4ec;
+}
 .tmnote--turquoise tmnoteactions {
-  background: #d5f0f7; }
-  .tmnote--turquoise tmnoteactions:hover {
-    background: #c1e9f2; }
-
+  background: #d5f0f7;
+}
+.tmnote--turquoise tmnoteactions:hover {
+  background: #c1e9f2;
+}
 .tmnote--turquoise textarea {
-  background-image: linear-gradient(#d5f0f7, #c1e9f2) !important; }
+  background-image: linear-gradient(#d5f0f7, #c1e9f2) !important;
+}
 
 .tmnotecolor--turquoise {
   border-color: #c1e9f2;
-  background-image: linear-gradient(#d5f0f7, #c1e9f2); }
+  background-image: linear-gradient(#d5f0f7, #c1e9f2);
+}
 
 tmnote {
   display: none;
@@ -160,22 +191,28 @@ tmnote {
   line-height: 1.4;
   margin: 0;
   z-index: 2147483646;
-  box-sizing: border-box !important; }
-  .tmnotes--0_8 tmnote {
-    opacity: 0.8; }
-  tmnote:hover {
-    opacity: 1 !important; }
+  box-sizing: border-box !important;
+}
+.tmnotes--0_8 tmnote {
+  opacity: 0.8;
+}
+tmnote:hover {
+  opacity: 1 !important;
+}
 
 tmnoteheader {
   height: 22px;
   position: relative;
   display: block;
   z-index: 1;
-  cursor: move; }
-  .tmnotes--plain-view tmnoteheader {
-    display: none; }
-  tmnote:hover tmnoteheader {
-    display: block !important; }
+  cursor: move;
+}
+.tmnotes--plain-view tmnoteheader {
+  display: none;
+}
+tmnote:hover tmnoteheader {
+  display: block !important;
+}
 
 tmnotepalette {
   position: absolute;
@@ -186,7 +223,8 @@ tmnotepalette {
   padding: 4px 0 6px;
   text-align: center;
   box-sizing: border-box;
-  border-bottom: 1px solid #e1e2e3; }
+  border-bottom: 1px solid #e1e2e3;
+}
 
 tmnotecolor {
   width: 22px;
@@ -196,11 +234,13 @@ tmnotecolor {
   margin: 0 7px;
   border-top: 2px solid;
   cursor: pointer;
-  box-shadow: 0 1px 3px #c8c8c8; }
-  tmnotecolor:hover {
-    top: -1px;
-    box-shadow: 0 1px 3px #aaa;
-    filter: brightness(1.02); }
+  box-shadow: 0 1px 3px #c8c8c8;
+}
+tmnotecolor:hover {
+  top: -1px;
+  box-shadow: 0 1px 3px #aaa;
+  filter: brightness(1.02);
+}
 
 tmnoteactions {
   position: absolute;
@@ -209,11 +249,14 @@ tmnoteactions {
   background: #ffe;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   border-radius: 0 2px 2px 2px;
-  box-sizing: border-box !important; }
-  .tmnotes--plain-view tmnoteactions {
-    display: none; }
-  tmnote:hover tmnoteactions {
-    display: block !important; }
+  box-sizing: border-box !important;
+}
+.tmnotes--plain-view tmnoteactions {
+  display: none;
+}
+tmnote:hover tmnoteactions {
+  display: block !important;
+}
 
 tmnotedelete,
 tmnoteminimize,
@@ -225,27 +268,32 @@ tmnotecustomize {
   color: #c8c8c8;
   line-height: 1;
   height: 20px;
-  box-sizing: border-box !important; }
-  tmnotedelete:hover,
-  tmnoteminimize:hover,
-  tmnotecustomize:hover {
-    color: #37414b; }
+  box-sizing: border-box !important;
+}
+tmnotedelete:hover,
+tmnoteminimize:hover,
+tmnotecustomize:hover {
+  color: #37414b;
+}
 
 tmnotedelete {
   top: 40px;
   font-size: 10px;
   font-weight: bold;
-  padding: 5px 6px 0 6px; }
+  padding: 5px 6px 0 6px;
+}
 
 tmnoteminimize {
   top: 60px;
   font-size: 18px;
-  padding: 0px 4px 0 5px; }
+  padding: 0px 4px 0 5px;
+}
 
 tmnotecustomize {
   top: 20px;
   font-size: 16px;
-  padding: 1px 3px 2px 5px; }
+  padding: 1px 3px 2px 5px;
+}
 
 body > tmnote > textarea[data-tm-note] {
   display: block !important;
@@ -258,7 +306,8 @@ body > tmnote > textarea[data-tm-note] {
   font-size: 12px !important;
   border: 0 !important;
   margin: 0 !important;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+}
 
 tmui {
   display: block;
@@ -267,7 +316,8 @@ tmui {
   background: #fbfbfb;
   border: 1px solid #e1e2e3;
   padding-top: 3px;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+}
 
 tmbm, tmnotestoggle {
   display: inline-block;
@@ -276,27 +326,32 @@ tmbm, tmnotestoggle {
   margin-right: 3px;
   vertical-align: top;
   width: 12px;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25)); }
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+}
 
 tmbm {
-  background-image: url(../../icons/bm.png);
+  background-image: url(../../13662c071a6114b3d1b4.png);
   background-repeat: no-repeat;
   background-position: center, 0 0;
   background-size: unset, 100%;
-  height: 18px; }
+  height: 18px;
+}
 
 tmbm:hover {
-  filter: brightness(1.15); }
+  filter: brightness(1.15);
+}
 
 tmnotestoggle {
-  background-image: url(../../icons/note.png);
+  background-image: url(../../95710b465a23d6248138.png);
   background-repeat: no-repeat;
   background-position: center, 0 0;
   background-size: unset, 100%;
-  height: 16px; }
+  height: 16px;
+}
 
 tmnotestoggle:hover {
-  filter: brightness(1.15); }
+  filter: brightness(1.15);
+}
 
 tmpopup {
   position: absolute;
@@ -305,7 +360,8 @@ tmpopup {
   background: #37414b;
   border-radius: 3px;
   box-sizing: border-box !important;
-  padding: 2px 4px; }
+  padding: 2px 4px;
+}
 
 tmpopupcolor {
   display: inline-block;
@@ -313,13 +369,16 @@ tmpopupcolor {
   height: 16px;
   border-radius: 50%;
   margin: 4px 2px 0;
-  cursor: pointer; }
-  tmpopupcolor:hover {
-    box-shadow: 0 0 1px #fbfbfb; }
+  cursor: pointer;
+}
+tmpopupcolor:hover {
+  box-shadow: 0 0 1px #fbfbfb;
+}
 
 copyshop {
   all: unset !important;
   display: block !important;
   position: absolute !important;
   bottom: -100% !important;
-  left: -100% !important; }
+  left: -100% !important;
+}

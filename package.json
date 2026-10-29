@@ -19,7 +19,7 @@
     "webpack-cli": "^5.0.0"
   },
   "scripts": {
-    "__webpack": "webpack --progress --config=webpack.config.js --hide-modules --display=minimal",
+    "__webpack": "webpack --progress --config=webpack.config.js",
     "dev": "cross-env NODE_ENV=DEV npm run __webpack",
     "prod": "cross-env NODE_ENV=PROD npm run __webpack"
   }
